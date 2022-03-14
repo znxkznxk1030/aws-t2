@@ -71,3 +71,4 @@ service httpd start
 
 ![애플리케이션 테스트 - 1](./figures/ec2-25.png)
 ![애플리케이션 테스트 - 2](./figures/ec2-26.png)
+![애플리케이션 테스트 - 2](./figures/ec2-27.png)
