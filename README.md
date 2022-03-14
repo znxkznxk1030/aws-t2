@@ -104,7 +104,7 @@
 
 ## 모듈 2: 가장 간단한 아키텍쳐
 
-![S3](./figures/s3.png)
+![module - 2](./figures/s3.png)
 
 ### Amazon S3
 
@@ -236,3 +236,160 @@
 ### 수명 주기 정책
 
 - 생성 후 기간을 기준으로 객체를 삭제 또는 이동 할 수 있습니다.
+
+## 모듈 3 : 컴퓨터 계층 추가
+
+- 적은 수의 일관된 사용자가 사용할 애플리케이션을 실행
+
+![module - 3](./figures/ec2.png)
+
+### 모듈 개요
+
+- EC2
+- 인스턴스 유형 및 패밀리
+- EBS 볼륨
+- 규정 준수 옵션
+
+### Amazon 머신 이미지 (AMI)를 사용하여 Amazon EC2 인스턴스 시작
+
+1. Pre-Built ( by Amazon ) 또는 퍼블릭 커뮤니티 AMI
+2. AMI + Instance Type (F.G.S | Family, Generation, Size | ex: t2.large)
+3. Configure Instance : 사용자 데이터, VPC | Subnet, 스팟 인스턴스, ENI, Public IP <-> EIP (Elastic IP| 5개/Region), 배치그룹, IAM Role: Instance Profile
+4. Add Storage : EBS/Instance Storage ( 인스턴스 스토어는 모든 인스턴스 타입에서 지원 되지는 않는다. ex: t2 - X, c5d.large, c5d.xlarge)
+5. Configuare Security Group
+6. Key Pair : Pub/Pri
+7. Launch Instance
+
+- 런치된 인스턴스(Web/WAS)를 가지고 AMI로 만듬 ( 기본적으로 private 한 이미지 )
+
+- metadata: 인스턴스를 설명하는 데이터: 실행중인 인스턴스를 구성 또는 관리
+
+```bash
+curl http://169.254.169.254/lastest/meta-data/instance-id
+```
+
+- t Family를 사용해서 인스턴스를 만들면 성능이 좋아 보다 저렴하다.
+
+### EBS vs Instance Store( Storage )
+
+### AMI는 어떠한 도움을 줍니까?
+
+- 반복성
+- 재사용성
+- 복구성
+- Marketplace 솔루션
+- 백업
+
+### 사용자 데이터를 사용하여 EC2 인스턴스 시작
+
+사용자 AMI -> ( 아래 명령어 ) -> EC2 인스턴스 실행
+
+```bash
+yum update -y
+service httpd start
+chkconfig httpd on
+```
+
+### 인스턴스 메타데이터를 사용하여 EC2 인스턴스에 대한 정보 가져오기
+
+사용자 AMI -> ( 아래 명령어 ) -> EC2 인스턴스 실행
+
+```bash
+!bin/bash
+yum update -y
+host = $(curl http://169.254.169.254/lastest/meta-data/instance-id)
+```
+
+### EBS ( Elastic Block Storage )는 어떤 문제를 해결합니까?
+
+- 애플리케이션에는 블록수준 스토리지가 필요
+- 인스턴스 스토어는 휘발성
+- 종료후에도 데이터가 지속
+- 데이터 볼륨을 백업
+- 유의사항: 동일한 인스턴스에 여러 Amazon EBS볼륨이 있을 수 있지만 각 볼륨은 한번에 하나의 인스턴스에만 연결 할 수 있음
+
+### EBS 볼륨 유형 ( 부트 볼륨이 될 수 없음 )
+
+- 처리량 최적화 HDD : 자주 액세스
+- 콜드 HDD : 자주 액세스 X
+
+### 공유 파일 시스템 - 여러 인스턴스가 동일한 스토리지를 사용해야 하는 경우 어떻게 해야 합니까?
+
+- EFS/FSx 가 적합
+- EBS는 하나의 인스턴스에만 연결
+- S3도 옵션이지만 이상적이지 않음
+
+### Amazon FSx
+
+- Windows/Lustre 워크로드
+
+### EC2 인스턴스 유형
+
+- 효율적인 인스턴스 사용률
+- 불필요한 비용을 절감
+
+#### 범용 - t, m
+
+#### 컴퓨팅 최적화 - c
+
+#### 메모리 최적화 - r
+
+#### 엑셀러레이트 - p
+
+#### 스토리지 최적화 - h
+
+#### 인텔 제온 CPU - 최신식 제온 확장형 프로세서 사용하고 있다.
+
+### EC2 - 비용
+
+- 온디맨드 인스턴스
+- 예약 인스턴스
+- Saving Plans
+- 스팟 인스턴스
+
+- on-demand가 제일 비싸고 spot instance가 제일 싸다 ( 최대 90% 저렴 )
+- Reserved Instance, Saving Plans를 이용하면 on-demand 보단 더 싸게 이용 할수 있다. ( 40 ~ 70% 저렴 )
+
+#### 온디맨드 인스턴스
+
+- 초당 또는 시간당
+
+#### 예약 인스턴스
+
+- 용량에 대한 비용을 미리 지불
+- 스탠다드 RI, 컴버터블 RI, 예약 RI
+- 3가지 선결제 방법
+- 여러 계정 사이에서 공유 가능
+
+#### Savings Plans
+
+- 스탠다드 RI, 컴버터블 RI 에서 확장형
+- 예약 인스턴스에서 유연한 기능 제공
+
+#### Spot Instance
+
+- 인스턴스 종료 2분 전에 중단공지 받음
+
+### EC2 전용 옵션
+
+- 전용 인스턴스
+- 전용 호스트
+
+### 태그지정 모범사례
+
+- 리소스 태그를 관리하는데 도움이 되는 자동화된 도구를 구현
+- 태그는 너무 적게 사용하는 것보다 너무 많이 사용하는 것이 낫습니다
+- 수정하기 쉽습니다
+- 예: 앱버전, ENV, DNS 이름, 앱 스택 식별자
+
+### EC2 고려사항
+
+### 아키텍쳐 고려사항 1
+
+- Cluster Placement Groups
+
+- Spread Placement Groups
+
+- Partition Placement Groups
+
+![architect](./figures/architect-1.png)
