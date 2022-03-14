@@ -393,3 +393,79 @@ host = $(curl http://169.254.169.254/lastest/meta-data/instance-id)
 - Partition Placement Groups
 
 ![architect](./figures/architect-1.png)
+
+## 모듈 4: 데이터베이스 계층 추가
+
+![module - 4](./figures/database.png)
+
+### 구조화된 데이터 스토리지 비교 및 대조
+
+- 관계형 : sql기반 쿼리, 확장성 수직적
+- 비관계형: 문서 수집에 집중, 수평적 확장
+
+### 비관리형 데이터 베이스
+
+- AWS가 관리 하지 않는 데이터 베이스
+
+### RDS의 엔진
+
+- Oracle
+- MySql
+- MariaDB
+- postgreSQL
+- MS-SQL
+- Aurora ( MySql/ PostgreSQL )
+
+### Amazon RDS 및 Amazon Aurora
+
+- MySql및 Postgre와 호환되는 완전 관리형 데이터 베이스
+
+### Amazon DynamoDB
+
+- 완전 관리형 비관계형 데이터베이스 서비스
+- 이벤트 중심 프로그래밍 ( 서버리스 컴퓨팅 )
+- 최상의 수평 확장 기능
+
+#### DynamoDB의 글로벌 테이블
+
+- 단일 AWS계정이 소유하고 복제본 테이블로 식별되는 한개이상의 DynamoDB 테이블의 모음.
+- 복제본 테이블은 글로벌 테이블의 일부로 기능하는 단일 DynamoDB 테이블
+- 리전당 한 개의 복제본 테이블을 가질 수 있음.
+- DynamoDB의 Streams라는 기능 사용 ( 변경된 사항이 있으면, 다른 리전으로 복제를 해줌 )
+
+#### DynamoDB 일관성 옵션
+
+- 최종적 일관성 ( = default, 0.5x 읽기, 강력한 일관성에 비해 2배더 읽을 수 있음)
+- 강력한 일관성
+
+### RDS 보안제어
+
+- DB 자체에 대한 액세스
+- 저장시 암호화
+- 전송중 암호화
+- 이벤트 알림
+
+### DynamoDB 보안제어
+
+- 정의 가능한 엑세스 권한 : 테이블에서 항목, 심지어 속성까지 모두 관리 가능
+- 저장시 암호화
+- SSL/TLS
+- 고객 관리형 키
+
+### AWS데이터베이스로 데이터 마이그레이션
+
+- on-premise => aws
+
+### AWS Database Migration Service ( DMS )
+
+#### 데이터 마이그레이션이 힘든경우
+
+- 데이터베이스가 너무 큼
+- 연결이 너무 느림
+- 개인 정보 보호 및 보안 문제
+
+=> AWS Snowball Edge ( Snowball v2 )를 권장 ( Snowball 도 S3)
+
+- Snowball Edge 디바이스를 사용하여 하나이상의 데이터베이스를 마이그레이션을 할수 있습니다
+- 멀티 테라바이트 스토리지
+- 인터넷 또는 DX 대역폭 사용
