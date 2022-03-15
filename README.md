@@ -338,7 +338,7 @@ host = $(curl http://169.254.169.254/lastest/meta-data/instance-id)
 
 #### 스토리지 최적화 - h
 
-#### 인텔 제온 CPU - 최신식 제온 확장형 프로세서 사용하고 있다.
+#### 인텔 제온 CPU - 최신식 제온 확장형 프로세서 사용하고 있다
 
 ### EC2 - 비용
 
@@ -621,3 +621,241 @@ host = $(curl http://169.254.169.254/lastest/meta-data/instance-id)
 - 고가용성 연결 단일 장애지점 없음
 - 대역폭 병목 현상 없음
 - 트래픽은 항상 글로벌 AWS 백본에서 유지됨
+
+## 모듈 6: AWS 기반 네트워킹 2부
+
+![vpc - 2](./figures/vpc-2.png)
+
+- 애플리케이션은 훨씬 더 큰 사용자 기반 및 변동 로드를 지원해야 하며 가용영역 수준의 장애를 처리해야 합니다
+
+- 네트워크 연결
+- VPC 엔드 포인트
+- 로드 밸런싱
+- 고가용성
+
+### Transit Gateway
+
+- 단일 게이트 웨이로 최대 5000개의 VPC와 온프레미스 환경 연결
+- 네트워크 사이를 이동하는 모등 트레픽의 허브
+- 가용성의 뛰어나고 유연한 완전 관리형 라우팅 서비스
+- 멀티 캐스트 및 리전간 피어링 허용
+
+#### Transit Gateway가 필요한 시나리오
+
+1. VPC 3개 모두 완벽히 연결
+1. 연결을 격리하고 VPN 액세스를 원할때 ( VPC 는 VPN 으로만, VPC끼리 통신 X, VPN -> VPC는 허용)
+
+### VPC 엔드포인트
+
+- VPC 외부 서비스와 프라이빗 하게 연결
+- 인터넷을 통과할 필요가 없다.
+- 동일한 리전에 잇어야함
+- 가용성이 뛰어나고, 중복적이고, 수평적으로 확장됨
+
+### 두가지 유형의 엔드포인트
+
+#### 인터페이스 엔드포인트 (ENI)
+
+- EC2, ELB 등등 다수
+- 다른 AWS 계정에서 호스팅하는 엔드포인트 서비스
+- 인터넷을 안나가도 됌
+
+#### 게이트웨이 엔드포인드
+
+- Router 등록을 해야함
+- S3, DynamoDB ( 최근에 s3는 Interface 도 지원)
+- Subnet의 route table을 업데이트 시켜야함
+
+[AWS PrivateLink for Amazon S3](https://aws.amazon.com/ko/blogs/aws/aws-privatelink-for-amazon-s3-now-available/)
+
+### VPC 인터페이스 엔드포인트 ( Private Link )
+
+- 외부망을 통하지 않고 리전내에 VPC끼리 통신할 수 있게 함
+
+### ELB
+
+### fail-open 매커니즘
+
+- 타겟 인스턴스가 다 망가졌을때, 에러보내지 않고 망가졌다고 보낸 타겟에 그냥 보내는 매커니즘
+
+### ELB 옵션
+
+- Application Load Balancer ( L7, HTTP, HTTPS 트래픽의 고급 로드)
+- Network Load Balancer ( TCP, UDP, TLS 등 L4 연결 수준에서 운영)
+- Classic Load Balancer (L7 L4를 한번에 처리하도록 함)
+- Gateway Load Balancer ( Appliance - 소프트웨어적으로 구현됨, L3/L4 사이에 위치, 보안과 관련됨 )
+
+### ELB를 사용해야 하는 이유
+
+- 고가용성
+- 상태확인
+- 보안기능
+- TLS 종료
+
+### ELB 설계 패턴
+
+1. Path-Base 설계
+
+### 다중 리전 고가용성 ( DNS | Route 53 )
+
+- 53 port를 쓰니 53이라고 이름을 명명
+- 멀티플 라우팅 옵션
+
+### Route 53이 고가용성에 어떻게 도움이 됩니까?
+
+- 엄격한 SLA의 경우 AGA ( Global Accelerate ) 사용
+
+### Route 53 라우팅 옵션
+
+- 상태 확인 및 DNS 장애 조치
+- 지리 위치 라우팅
+- 지리 근접 라우팅
+- 다중 값 응답
+
+## 모듈 7: AWS Identity and Access Management (IAM)
+
+- 팀원이 전문적인 역할을 맡고 있을 만큼 충분히 큰 규모의 조직입니다. 필수 권한을 통한 보호 및 액세스 제어 기능이 필요합니다.
+
+### IAM 모듈 개요
+
+- IAM 사용자, 그룹 및 역할
+- 연동 자격 증명 관리
+- Amazon Cognito
+- AWS Organization
+
+### IAM
+
+- 다은 AWS 서비스와 통합
+- 연동 자격증명관리
+- 애플리케이션의 안저한 액세스
+- 세부적 권한
+- 5000개가 맥시멈
+
+### IAM User 생성 단계
+
+- Root User -> Admin User -> IAM User
+- Root User는 가입을 한 유저 ( Email/Password + MFA ( otp 같은것 ))
+- Root User는 Admin User를 만들고 빠져야 한다.
+
+### 정책의 종류
+
+1. Indentity-based Policy ( 자격증명기반 정책)
+   1. managed (AWS, Customer)
+   2. inline (embeded)
+2. Resource-based Policy ( 리소스기반 정책)
+
+### 권한평가 우선순위
+
+1. 명시적 거부
+2. 명시적 허용
+3. 디폴트는 거부
+
+### STS ( Security Token Service )
+
+- Role 사용에 관여
+- AssumeRole (API) : 모자를 쓴다.
+- AKSK : Credential 정보
+- TK: Token
+- T: Timer ( expirate date )
+
+### Amazon Cognito
+
+- 웹/앱에 대한 인증, 권한 부여 및 사용자관리를 제공하는 완전 관리형 서비스
+  - 사용자 풀
+  - 자격증명 풀
+- 개발/운영은 IAM User
+- 이용하는 것은 IAM Role
+
+### Landing Zone
+
+- AWS 모범 사례에 따라 안전한 다중계정 AWS 환경을 빠르게 설정할 수 있도록 도와주는 솔루션으로 다음 기능을 갖추고 있습니다
+
+1. 다중 계정 구조
+2. Account Vending Machine
+3. 사용자 액세스
+4. 알림
+
+### 중앙 집중식 계정 관리
+
+- 그룹 기반 계정관리
+- AWS 서비스에 대한 정책 기반 액세스
+- 자동화된 계정 생성 및 관리
+- 통합 결제
+- API 기반
+
+## 모듈 8: 탄력성, 고가용성 및 모니터링
+
+![auto scaling](./figures/elastic.png)
+
+- 조직에서 급격한 성장 ( 수만 명의 사용자 )이 발생하고 있으며, 아키텍처에서 용량의 큰 변화를 처리
+
+### 고가용성 모듈 개요
+
+- 탄력성의 이해
+- 모니터링
+- 규모조정
+
+### 고가용성 요소
+
+- 내결함성
+- 복구성
+- 확장성
+
+### 세가지 유형의 탄력성
+
+- 시간기반
+- 볼륨기반
+- 예측기반
+
+### 모니터링 이유
+
+- 운영상태
+- 리소스 활용
+- 애플리케이션 성능
+- 보안감사
+
+\+ 비용을 이해하기 위한 모니터링
+
+### Cloud Watch
+
+- 특정 상황에 이벤트를 날린다.
+
+#### 응답하는 방식
+
+- 지표
+- 로그
+- 경보
+- 이벤트
+- 규칙
+- 대상
+
+### CloudWatch 경보 -> SNS / AutoScaling
+
+### CloudTrail
+
+- 계정에서 이루어지는 모든 API 호출을 기록하고 지정된 S3 버킷에 로그를 저장
+
+### 탄력성 확보 및 아키텍쳐 확장 -> EC2 AutoScaling Service
+
+- CloudWatch의 결보에 따라 인스턴스를 시작 또는 종료
+- 지정된 경우, 새 인스턴스를 로드 밸런서에 자동으로 등록
+- 여러 가용 영역에 걸쳐 시작할 수 있습니다.
+
+### Auto Scaling 고려사항
+
+- 여러 유형의 autoscaling을 결합 해야 할수 있음
+- 단계 조정을 사용하여 아키텍처를 조정하려면 더 많은 작업이 필요할 수 있음
+- 일부 아키텍쳐의 경우 둘 이상의 지표를 사용하여 조정 (CPU 외 추가 지표)
+- 조기에 빠르게 확장하고 시간이 지남에 따라 천천히 축소
+- 수명 주기 후크 사용
+
+\+ 주의 : 인스턴스가 시작후 완전히 사용 가능한 상태가 되려면 몇 분 정도 걸릴 수 있습니다.
+
+### EC2 인스턴트에 Cloud Watch를 붙였는데 EC2가 종료되고 다시 시작되어도 계속 모니터링 가능한가요 ?
+
+- CW Agent 에 의해 API 형태로 CloudWatch 서비스의 Endpoint로 접속하여 데이터를 처리합니다.
+- IP주소 변화가 있어도 문제 없도록 구성 되어 있습니다.
+
+### 적응형 용량이 핫 키와 핫 파티션 문제를 해결해 주지는 않습니다.
+
+- 파티션 키값 균등성 좋게 만들어야 한다 ( 사용자 ID, 디바이스 ID )
