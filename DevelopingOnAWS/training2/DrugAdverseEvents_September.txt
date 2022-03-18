@@ -1,0 +1,16 @@
+genericDrugName,adverseReaction
+LEVOFLOXACIN,Rash on first use
+Cefuroxime Axetil,Fever
+clarithromycin,Wheezing
+Acetaminophen  Aspirin  Caffeine,Severe liver damage
+Phenytoin Sodium,Nunc purus.
+Ciprofloxacin Hydrochloride,Mauris ullamcorper purus sit amet nulla.
+Ibuprofen,Nulla neque libero  convallis eget  eleifend luctus  ultricies eu  nibh.
+Octinoxate  Oxybenzone  and Titanium Dioxide,Etiam faucibus cursus urna.
+ALCOHOL,Aenean lectus.
+Glycerin,Maecenas leo odio  condimentum id  luctus nec  molestie sed  justo.
+Angelica Archangelica  Aralia Quinquefolia  Cimicifuga Racemosa  Hydrastis Canadensis  Pulsatilla  Sabina  Sepia,Donec ut mauris eget massa tempor convallis.
+Arizona Ash,Vivamus tortor.
+Mafenide acetate,Mauris lacinia sapien quis libero.
+Alumina  Bryonia Alba,Nam ultrices  libero non mattis pulvinar  nulla pede ullamcorper augue  a suscipit nulla elit ac nulla.
+Cetirizine HCl,Nam dui.

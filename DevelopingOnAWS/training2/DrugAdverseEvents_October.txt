@@ -1,0 +1,10 @@
+genericDrugName,adverseReaction
+Cefuroxime Axetil,Fever
+clarithromycin,Wheezing
+Acetaminophen,Severe liver damage
+Phenytoin Sodium,Nunc purus.
+Ciprofloxacin Hydrochloride,Mauris ullamcorper purus sit amet nulla.
+Ibuprofen,Nulla neque libero  convallis eget eleifend luctus ultricies eu nibh.
+Octinoxate,Etiam faucibus cursus urna.
+ALCOHOL,Aenean lectus.
+Glycerin,Maecenas leo odio  condimentum id  luctus nec  molestie sed  justo.
