@@ -4,12 +4,12 @@
 
 ## 실습 목표
 
-- 제공된 VPC 검사
+- 제공된 VPC 확인하기
 - Applicaion Load Balancer 생성
 - Auto Scaling Group 생성
 - 애플리케이션 고가용성 테스트
 
-## 작업 1: VPC 검사
+## 작업 1: 제공된 VPC 구성 확인
 
 ### 제공된 환경
 
@@ -20,7 +20,7 @@
 - NAT 게이트웨이는 퍼블릭 서브넷중 하나에 있음
 - Amazon RDS 인스턴스는 프라이빗 서브넷 중 하나에 있음
 
-### VPC로 필터링 하기
+### 특정 VPC로 필터링 해서 보기
 
 ![lb1](./figures/lb01.png)
 
@@ -35,7 +35,7 @@
 
 ![lb3](./figures/lb04.png)
 
-- 10.0.0.0/24 == 10.0.0.0 ~ 10.0.0.255를 포함
+- 10.0.0.0/24 <=> 10.0.0.0 ~ 10.0.0.255
 - 가용영역은 usw2-az2
 
 ### 라우팅 테이블 확인하기
@@ -208,27 +208,129 @@ service httpd start
 
 ![lb-sg](./figures/lb-sg.png)
 
+### 로드 밸런서 보안 그룹
+
+- 로드 밸런서 구성 당시에 이미 구성함
+- 모든 수신 HTTP/HTTPS 트래픽 허용
+- 들어오는 요청을 대상 그룹 (Target Group) 으로 전달하도록 구성
+- Auto Scaling이 새로운 인스턴스를 시작하면 해당 인스턴스를 자동으로 대상 그룹에 추가
+
+### 애플리케이션 보안 그룹
+
 ![lb37](./figures/lb37.png)
+
+- [x] Inventory-App
+
 ![lb38](./figures/lb38.png)
-![lb39](./figures/lb39.png)
+
+- 로드 밸런서에서 HTTPS 구성을 했기 때문에 HTTPS로 구성할 필요 없음
+- Type: HTTP
+- Source: Inventory-LB
+- Description: Traffic from Load Balancer
 
 ![lb40](./figures/lb40.png)
+
+- Inventory-LB 보안 그룹 확인
+- HTTP/HTTPS 허용
+
 ![lb41](./figures/lb41.png)
+
+- 로드밸런서에 DNS가 할당되어 있다
+
+### 데이터베이스 보안 그룹
+
+- 애플리케이션 서버에서 수신되는 트래픽만 허용하도록 Database Security Group 수정
+
+- [x] Inventory-DB
+
+- Type: MySQL( 3306 )
+- Source: Inventory-App
+- Description: Traffic from App servers
+
+### 가용성 확인
+
 ![lb42](./figures/lb42.png)
+![lb58](./figures/lb58.png)
+
+- 인터넷 게이트 -> 로드밸런서 -> 앱서버 로의 구성 완료
+- 앱서버의 화면이 정상적으로 표시된다.
+
 ![lb43](./figures/lb43.png)
 ![lb44](./figures/lb44.png)
 ![lb45](./figures/lb45.png)
+
+- 앱 서버 하나를 종료시켜도 곧 하나의 인스턴스가 다시 생성된다.
+
+## 도전 과제: 데이터베이스를 고가용성으로 만들기
+
+- 애플리케이션은 고가용성이지만 데이터베이스는 여전히 한개임
+- 데이터베이스를 다중 가용영역( Multi AZ )에 배치
+
 ![lb46](./figures/lb46.png)
 ![lb47](./figures/lb47.png)
-![lb48](./figures/lb48.png)
-![lb49](./figures/lb49.png)
+
+- [x] Inventory-db
+- 작업 > "Modify" 클릭
 
 ![lb50](./figures/lb50.png)
+
+- [x] Multi-AZ deployment
+- Multi-AZ를 구성하는 데 필요한 유일한 단계
+- 이는 데이터 베이스가 여러 인스턴스에 분산된다는 뜻은 아님
+- Master --- Stand-by 인스턴스구조에서 Master에 장애가 발생할 경우 Stand-by가 이를 대신함.
+- 애플리케이션은 데이터베이스와 동일한 DNS 이름을 계속 사용하지만 연결은 현재 활성 상태인 데이터베이스 서버로 자동으로 리다이렉션
+
+### 속성을 변경하여 RDS 확장
+
+- EC2 인스턴스를 확장할 수 있는것과 마찬가지로 RDS도 확장할 수 있다.
+- 수직적 확장
+
+![lb48](./figures/lb48.png)
+
+- 인스턴스 크기를 두배로 늘리기
+
+![lb49](./figures/lb49.png)
+
+- 스토리지 크기를 두배로 늘리기 ( 5 => 10 )
+
 ![lb51](./figures/lb51.png)
+
+- 즉시 적용
+
+## 도전과제: 고가용성 NAT 게이트웨이
+
+- 로드밸런서 도입으로 애플리케이션은 프라이빗 서브넷으로 옮겨짐.
+- 프라이빗 서브넷에 있지만 다운로드 같은 외우 요청사항이 있을 경우에는 NAT Gateway를 통해 연결함.
+- 현재 NAT는 Public Subnet 1에 한개의 NAT Gateway만 존재함.
+- 이 NAT Gateway를 고가용성으로 만들어보자.
+
+### NAT 게이트웨이 생성
+
 ![lb52](./figures/lb52.png)
 ![lb53](./figures/lb53.png)
+
+- Name: my-nat-gateway
+- Subnet: Public Subnet 2
+- EIP 발급: "탄력적 IP 할당" 클릭
+- Tag: Name | my-nat-gateway
+
+### 라우팅 테이블 생성
+
 ![lb54](./figures/lb54.png)
+
+- Name: Private Route Table 2
+- VPC: Lab VPC
+- Tag: Name | Private Route Table 2
+
 ![lb55](./figures/lb55.png)
+
+- 10.0.0.0/20 => local
+- 0.0.0.0/0 my-nat-gateway
+
+### NAT 게이트웨이 서브넷 연결
+
 ![lb56](./figures/lb56.png)
 ![lb57](./figures/lb57.png)
-![lb58](./figures/lb58.png)
+
+- [x] Private Subnet 2
+- 이제 프라이빗 서브넷 2의 인터넷 바운드 트래픽을 동일한 가용 영역에 있는 NAT Gateway로 보냅니다.
