@@ -3,6 +3,57 @@
 - 다중 AZ 장애 조치 및 암호화를 사용하여 RDS 인스턴스 설정 및 구성
 - Secret Manager를 통해 보안 정보 생성 및 저장
 
+
+![rdb-000](./figures/rdb-000.png)
+![rdb-001](./figures/rdb-001.png)
+![rdb-002](./figures/rdb-002.png)
+![rdb-003](./figures/rdb-003.png)
+![rdb-004](./figures/rdb-004.png)
+![rdb-005](./figures/rdb-005.png)
+![rdb-006](./figures/rdb-006.png)
+![rdb-007](./figures/rdb-007.png)
+![rdb-008](./figures/rdb-008.png)
+![rdb-009](./figures/rdb-009.png)
+
+![rdb-010](./figures/rdb-010.png)
+![rdb-011](./figures/rdb-011.png)
+![rdb-012](./figures/rdb-012.png)
+![rdb-013](./figures/rdb-013.png)
+![rdb-014](./figures/rdb-014.png)
+![rdb-015](./figures/rdb-015.png)
+![rdb-016](./figures/rdb-016.png)
+![rdb-017](./figures/rdb-017.png)
+![rdb-018](./figures/rdb-018.png)
+![rdb-019](./figures/rdb-019.png)
+
+![rdb-020](./figures/rdb-020.png)
+![rdb-021](./figures/rdb-021.png)
+![rdb-022](./figures/rdb-022.png)
+![rdb-023](./figures/rdb-023.png)
+![rdb-024](./figures/rdb-024.png)
+![rdb-025](./figures/rdb-025.png)
+![rdb-026](./figures/rdb-026.png)
+![rdb-027](./figures/rdb-027.png)
+![rdb-028](./figures/rdb-028.png)
+![rdb-029](./figures/rdb-029.png)
+
+![rdb-030](./figures/rdb-030.png)
+![rdb-031](./figures/rdb-031.png)
+![rdb-032](./figures/rdb-032.png)
+![rdb-033](./figures/rdb-033.png)
+![rdb-034](./figures/rdb-034.png)
+![rdb-035](./figures/rdb-035.png)
+![rdb-036](./figures/rdb-036.png)
+![rdb-037](./figures/rdb-037.png)
+![rdb-038](./figures/rdb-038.png)
+![rdb-039](./figures/rdb-039.png)
+
+![rdb-040](./figures/rdb-040.png)
+![rdb-041](./figures/rdb-041.png)
+![rdb-042](./figures/rdb-042.png)
+![rdb-043](./figures/rdb-043.png)
+![rdb-044](./figures/rdb-044.png)
+
 ```bash
 aws secretsmanager list-secret-version-ids --secret-id mydbsecret-317
 
@@ -521,3 +572,17 @@ print(f'Post-failure Db node hostname: {post_failure_db_node_hostname}')
 print(f'Newest 5 sync records in current primary db node:')
 pp.pprint(test_runner.get_last_sync_records(test_run_id, 5))
 ```
+
+
+arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6
+
+aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6 --version-stage AWSCURRENT
+
+secret=$(aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6 | jq .SecretString | jq fromjson)
+user=$(echo $secret | jq -r .username)
+password=$(echo $secret | jq -r .password)
+endpoint=$(echo $secret | jq -r .host)
+port=$(echo $secret | jq -r .port)
+
+
+mysql -h $endpoint --ssl-ca=/home/ssm-user/rds-combined-ca-bundle.pem --ssl-verify-server-cert -u $user -P $port -p$password mydb
