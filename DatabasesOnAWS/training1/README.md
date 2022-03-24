@@ -572,17 +572,3 @@ print(f'Post-failure Db node hostname: {post_failure_db_node_hostname}')
 print(f'Newest 5 sync records in current primary db node:')
 pp.pprint(test_runner.get_last_sync_records(test_run_id, 5))
 ```
-
-
-arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6
-
-aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6 --version-stage AWSCURRENT
-
-secret=$(aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-west-2:719298357231:secret:mydbsecret-317-yCtib6 | jq .SecretString | jq fromjson)
-user=$(echo $secret | jq -r .username)
-password=$(echo $secret | jq -r .password)
-endpoint=$(echo $secret | jq -r .host)
-port=$(echo $secret | jq -r .port)
-
-
-mysql -h $endpoint --ssl-ca=/home/ssm-user/rds-combined-ca-bundle.pem --ssl-verify-server-cert -u $user -P $port -p$password mydb
