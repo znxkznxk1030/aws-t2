@@ -1,5 +1,7 @@
 # Amazon Redshift 데이터베이스 사용하기
 
+## 작업 1:
+
 ```sql
 BEGIN;
 
@@ -421,4 +423,3 @@ order by c.titleid, c.ordering
 - 응답시간이 개선되었음을 알 수 있다.
 
 ## 작업 8: 콘솔을 사용하여 쿼리 통계 보기
-
