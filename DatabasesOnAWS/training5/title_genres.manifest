@@ -1,0 +1,7 @@
+{
+  "entries": [
+    {"url":"s3://qls-5546846-ab08f97367b4c308-labdatabucket-10gc52mqp48su/title-genres/split-with-gzip/tg_aa.gz", "mandatory":true},
+    {"url":"s3://qls-5546846-ab08f97367b4c308-labdatabucket-10gc52mqp48su/title-genres/split-with-gzip/tg_ab.gz", "mandatory":true},
+    {"url":"s3://qls-5546846-ab08f97367b4c308-labdatabucket-10gc52mqp48su/title-genres/split-with-gzip/tg_ac.gz", "mandatory":true}
+  ]
+}
