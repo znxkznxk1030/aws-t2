@@ -1,0 +1,803 @@
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:21.689Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Successfully copied CNI plugin binary and config file.\"}\n","stream":"stdout","time":"2022-03-30T07:24:21.689606416Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:17.624Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Starting IPAM daemon in the background ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:17.624563512Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:17.627Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Checking for IPAM connectivity ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:17.628060384Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:21.690Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Foregrounding IPAM daemon ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:21.690573484Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:17.607Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Validating env variables ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:17.610865646Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:19.641Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:19.642288935Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:21.655Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:21.656439022Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:21.684Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Copying config file ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:21.684412408Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:17.608Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Install CNI binaries..\"}\n","stream":"stdout","time":"2022-03-30T07:24:17.611321914Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000\n","stream":"stderr","time":"2022-03-30T07:24:14.605373014Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    13  100    13    0     0  13000      0 --:--:-- --:--:-- --:--:-- 13000\n","stream":"stderr","time":"2022-03-30T07:24:14.612019902Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000\n","stream":"stderr","time":"2022-03-30T07:24:14.618800347Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    17  100    17    0     0  17000      0 --:--:-- --:--:-- --:--:-- 17000\n","stream":"stderr","time":"2022-03-30T07:24:14.625275578Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAJXN9W42PmN4v-si9ymJGd_IfQa4awNh8-e5IYG1WKjrIiIEAg==' http://169.254.169.254/latest/meta-data/local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:14.605972936Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAJXN9W7aGFWReOZ-OZn0NM_afIeDRITDT3zFvgwFiHf-C-ijdw==' http://169.254.169.254/latest/meta-data/mac\n","stream":"stderr","time":"2022-03-30T07:24:14.61945108Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:14.602957372Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:14.613106018Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:14.604445686Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:14.610609906Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:14.617623499Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:14.623892206Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:14.604459008Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:14.610669432Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:14.617706185Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:14.624062873Z"}
+{"log":"++ TOKEN=AQAEAJXN9W7aGFWReOZ-OZn0NM_afIeDRITDT3zFvgwFiHf-C-ijdw==\n","stream":"stderr","time":"2022-03-30T07:24:14.619256098Z"}
+{"log":"++ TOKEN=AQAEAJXN9W42PmN4v-si9ymJGd_IfQa4awNh8-e5IYG1WKjrIiIEAg==\n","stream":"stderr","time":"2022-03-30T07:24:14.60582889Z"}
+{"log":"+ PLUGIN_BINS='loopback portmap bandwidth aws-cni-support.sh'\n","stream":"stderr","time":"2022-03-30T07:24:14.585422175Z"}
+{"log":"+ install aws-cni-support.sh /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:14.602947457Z"}
+{"log":"+ cat /proc/sys/net/ipv4/conf/eth0/rp_filter\n","stream":"stderr","time":"2022-03-30T07:24:14.630853022Z"}
+{"log":"+ sysctl -w net.ipv4.conf.eth0.rp_filter=2\n","stream":"stderr","time":"2022-03-30T07:24:14.628949068Z"}
+{"log":"+ echo 'Copying CNI plugin binaries ... '\n","stream":"stderr","time":"2022-03-30T07:24:14.585460459Z"}
+{"log":"++ grep -F 'link/ether 0a:5c:de:e6:59:33'\n","stream":"stderr","time":"2022-03-30T07:24:14.626684057Z"}
+{"log":"+ sysctl -e -w net.ipv4.tcp_early_demux=1\n","stream":"stderr","time":"2022-03-30T07:24:14.631668333Z"}
+{"log":"+ echo 'Configure rp_filter loose... '\n","stream":"stderr","time":"2022-03-30T07:24:14.602951109Z"}
+{"log":"+ HOST_CNI_BIN_PATH=/host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:14.585457651Z"}
+{"log":"+ install bandwidth /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:14.595281645Z"}
+{"log":"+ install loopback /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:14.585467148Z"}
+{"log":"+ '[' '!' -f aws-cni-support.sh ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.585454928Z"}
+{"log":"+ install portmap /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:14.588642037Z"}
+{"log":"Copying CNI plugin binaries ... \n","stream":"stdout","time":"2022-03-30T07:24:14.585278424Z"}
+{"log":"net.ipv4.conf.eth0.rp_filter = 2\n","stream":"stdout","time":"2022-03-30T07:24:14.630551776Z"}
+{"log":"+ echo 'CNI init container done'\n","stream":"stderr","time":"2022-03-30T07:24:14.633408797Z"}
+{"log":"+ PRIMARY_MAC=0a:5c:de:e6:59:33\n","stream":"stderr","time":"2022-03-30T07:24:14.625837412Z"}
+{"log":"++ awk '-F[ :]+' '{print $2}'\n","stream":"stderr","time":"2022-03-30T07:24:14.627060756Z"}
+{"log":"Configure rp_filter loose... \n","stream":"stdout","time":"2022-03-30T07:24:14.60311906Z"}
+{"log":"net.ipv4.tcp_early_demux = 1\n","stream":"stdout","time":"2022-03-30T07:24:14.633067445Z"}
+{"log":"++ get_metadata local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:14.602954132Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.585431408Z"}
+{"log":"+ '[' '!' -f loopback ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.585435457Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.585438735Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.585445728Z"}
+{"log":"+ '[' '!' -f bandwidth ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.58544868Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.585451752Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.585463549Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.588625758Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.595263518Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:14.602924615Z"}
+{"log":"++ meta=0a:5c:de:e6:59:33\n","stream":"stderr","time":"2022-03-30T07:24:14.625764465Z"}
+{"log":"++ echo 0a:5c:de:e6:59:33\n","stream":"stderr","time":"2022-03-30T07:24:14.625779355Z"}
+{"log":"+ '[' '!' -f portmap ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.585442209Z"}
+{"log":"+ HOST_IP=10.10.150.101\n","stream":"stderr","time":"2022-03-30T07:24:14.612567188Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.631617144Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.633365088Z"}
+{"log":"CNI init container done\n","stream":"stdout","time":"2022-03-30T07:24:14.633443713Z"}
+{"log":"++ meta=10.10.150.101\n","stream":"stderr","time":"2022-03-30T07:24:14.612520592Z"}
+{"log":"++ echo 10.10.150.101\n","stream":"stderr","time":"2022-03-30T07:24:14.612537162Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.605849346Z"}
+{"log":"++ get_metadata mac\n","stream":"stderr","time":"2022-03-30T07:24:14.612957303Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.619276902Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.605846025Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.612531072Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.612534494Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.619273335Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.625773812Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:14.625776877Z"}
+{"log":"++ ip -o link show\n","stream":"stderr","time":"2022-03-30T07:24:14.626344443Z"}
+{"log":"+ PRIMARY_IF=eth0\n","stream":"stderr","time":"2022-03-30T07:24:14.628852212Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:14.605839371Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:14.619266372Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:14.619270182Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:14.60584285Z"}
+{"log":"2\n","stream":"stdout","time":"2022-03-30T07:24:14.631472536Z"}
+{"log":"[INFO] plugin/reload: Running configuration MD5 = 47d57903c0f0ba4ee0626a17181e5d94\n","stream":"stdout","time":"2022-03-30T07:24:36.983441337Z"}
+{"log":"linux/amd64, go1.13.15, 053c4d5c\n","stream":"stdout","time":"2022-03-30T07:24:36.98349636Z"}
+{"log":"CoreDNS-1.8.4\n","stream":"stdout","time":"2022-03-30T07:24:36.983459639Z"}
+{"log":".:53\n","stream":"stdout","time":"2022-03-30T07:24:36.982992012Z"}
+{"log":"[INFO] plugin/reload: Running configuration MD5 = 47d57903c0f0ba4ee0626a17181e5d94\n","stream":"stdout","time":"2022-03-30T07:24:36.983482347Z"}
+{"log":"linux/amd64, go1.13.15, 053c4d5c\n","stream":"stdout","time":"2022-03-30T07:24:36.983652089Z"}
+{"log":"CoreDNS-1.8.4\n","stream":"stdout","time":"2022-03-30T07:24:36.983588023Z"}
+{"log":".:53\n","stream":"stdout","time":"2022-03-30T07:24:36.983057391Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter delivery_stream = 'eks-stream'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.982662324Z"}
+{"log":"[2022/03/30 08:08:00] [ info] [storage] normal synchronization mode, checksum disabled, max_chunks_up=128\n","stream":"stderr","time":"2022-03-30T08:08:00.970865642Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter time_key_format = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.982760027Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter region = 'us-west-2'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.98268117Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter data_keys = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.982684825Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter role_arn = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.982747429Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter endpoint = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.982753066Z"}
+{"log":"time=\"2022-03-30T08:08:00Z\" level=info msg=\"[firehose 0] plugin parameter time_key = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:00.98275642Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2019-2020 The Fluent Bit Authors\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:00.97016171Z"}
+{"log":"[2022/03/30 08:08:00] [ info] [storage] version=1.0.3, initializing...\n","stream":"stderr","time":"2022-03-30T08:08:00.970711028Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2015-2018 Treasure Data\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:00.970166797Z"}
+{"log":"* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd\n","stream":"stderr","time":"2022-03-30T08:08:00.970170418Z"}
+{"log":"[2022/03/30 08:08:00] [ info] [sp] stream processor started\n","stream":"stderr","time":"2022-03-30T08:08:00.982989801Z"}
+{"log":"[2022/03/30 08:08:00] [ info] [engine] started (pid=1)\n","stream":"stderr","time":"2022-03-30T08:08:00.9709323Z"}
+{"log":"[2022/03/30 08:08:00] [ info] [storage] in-memory\n","stream":"stderr","time":"2022-03-30T08:08:00.970801316Z"}
+{"log":"AWS for Fluent Bit Container Image Version 2.3.1\n","stream":"stdout","time":"2022-03-30T08:08:00.937923598Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:00.937872284Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:00.938075526Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:00.93790685Z"}
+{"log":"\u001b[1mFluent Bit v1.4.2\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:00.970135958Z"}
+{"log":"* https://fluentbit.io\n","stream":"stderr","time":"2022-03-30T08:08:00.970173557Z"}
+{"log":"\n","stream":"stderr","time":"2022-03-30T08:08:00.970176959Z"}
+{"log":"W0330 07:24:14.225378       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:14.226340775Z"}
+{"log":"W0330 07:24:14.227139       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:14.227710509Z"}
+{"log":"W0330 07:32:39.230945       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:32:39.231056693Z"}
+{"log":"W0330 07:37:56.233794       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:37:56.234180616Z"}
+{"log":"W0330 07:47:21.237161       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:47:21.237359603Z"}
+{"log":"W0330 07:52:46.241932       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:52:46.242059335Z"}
+{"log":"W0330 08:00:00.243103       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:00:00.243270905Z"}
+{"log":"W0330 08:05:35.245972       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:05:35.246098214Z"}
+{"log":"I0330 07:24:37.247362       1 proxier.go:841] \"Stale service\" protocol=\"udp\" svcPortName=\"kube-system/kube-dns:dns\" clusterIP=\"172.20.0.10\"\n","stream":"stderr","time":"2022-03-30T07:24:37.247534836Z"}
+{"log":"I0330 07:24:14.215147       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv4 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:14.224797251Z"}
+{"log":"I0330 07:24:14.215246       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv6 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:14.224807648Z"}
+{"log":"I0330 07:24:14.324238       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:14.324503225Z"}
+{"log":"I0330 07:24:14.324155       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:14.32449752Z"}
+{"log":"I0330 07:24:14.324347       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns-tcp\" at 172.20.0.10:53/TCP\n","stream":"stderr","time":"2022-03-30T07:24:14.324516543Z"}
+{"log":"I0330 07:24:14.222916       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400\n","stream":"stderr","time":"2022-03-30T07:24:14.224828392Z"}
+{"log":"I0330 07:24:14.324308       1 service.go:421] Adding new service port \"default/kubernetes:https\" at 172.20.0.1:443/TCP\n","stream":"stderr","time":"2022-03-30T07:24:14.324510092Z"}
+{"log":"I0330 07:24:14.324336       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns\" at 172.20.0.10:53/UDP\n","stream":"stderr","time":"2022-03-30T07:24:14.324513295Z"}
+{"log":"I0330 07:24:14.215103       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv4 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:14.224794818Z"}
+{"log":"I0330 07:24:14.215212       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv6 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:14.224805283Z"}
+{"log":"I0330 07:24:14.222963       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600\n","stream":"stderr","time":"2022-03-30T07:24:14.224831719Z"}
+{"log":"W0330 07:24:14.214966       1 server_others.go:496] detect-local-mode set to ClusterCIDR, but no cluster CIDR defined\n","stream":"stderr","time":"2022-03-30T07:24:14.224786952Z"}
+{"log":"W0330 07:24:14.214981       1 server_others.go:545] detect-local-mode: ClusterCIDR , defaulting to no-op detect-local\n","stream":"stderr","time":"2022-03-30T07:24:14.224789824Z"}
+{"log":"I0330 07:24:14.118515       1 flags.go:59] FLAG: --kube-api-content-type=\"application/vnd.kubernetes.protobuf\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120782805Z"}
+{"log":"I0330 07:24:14.118570       1 flags.go:59] FLAG: --machine-id-file=\"/etc/machine-id,/var/lib/dbus/machine-id\"\n","stream":"stderr","time":"2022-03-30T07:24:14.12084382Z"}
+{"log":"I0330 07:24:14.215047       1 utils.go:375] Changed sysctl \"net/ipv4/conf/all/route_localnet\": 0 -\u003e 1\n","stream":"stderr","time":"2022-03-30T07:24:14.224792095Z"}
+{"log":"I0330 07:24:14.223705       1 shared_informer.go:240] Waiting for caches to sync for endpoint slice config\n","stream":"stderr","time":"2022-03-30T07:24:14.224845474Z"}
+{"log":"I0330 07:24:14.214894       1 server_others.go:206] kube-proxy running in dual-stack mode, IPv4-primary\n","stream":"stderr","time":"2022-03-30T07:24:14.224762486Z"}
+{"log":"I0330 07:24:14.216542       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072\n","stream":"stderr","time":"2022-03-30T07:24:14.224814195Z"}
+{"log":"I0330 07:24:14.223119       1 shared_informer.go:240] Waiting for caches to sync for service config\n","stream":"stderr","time":"2022-03-30T07:24:14.224838749Z"}
+{"log":"I0330 07:24:14.118300       1 flags.go:59] FLAG: --boot-id-file=\"/proc/sys/kernel/random/boot_id\"\n","stream":"stderr","time":"2022-03-30T07:24:14.11834483Z"}
+{"log":"I0330 07:24:14.324036       1 shared_informer.go:247] Caches are synced for endpoint slice config \n","stream":"stderr","time":"2022-03-30T07:24:14.324477175Z"}
+{"log":"I0330 07:24:14.387667       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"63.368861ms\"\n","stream":"stderr","time":"2022-03-30T07:24:14.387772831Z"}
+{"log":"I0330 07:24:14.425411       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"37.703083ms\"\n","stream":"stderr","time":"2022-03-30T07:24:14.425514713Z"}
+{"log":"I0330 07:24:37.292088       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"44.800889ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.292415394Z"}
+{"log":"I0330 07:24:38.353835       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"27.799913ms\"\n","stream":"stderr","time":"2022-03-30T07:24:38.353953548Z"}
+{"log":"I0330 07:24:14.118413       1 flags.go:59] FLAG: --conntrack-tcp-timeout-established=\"24h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120701914Z"}
+{"log":"I0330 07:24:14.215260       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv6\n","stream":"stderr","time":"2022-03-30T07:24:14.224809958Z"}
+{"log":"I0330 07:24:37.325880       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"33.73925ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.325997983Z"}
+{"log":"I0330 07:24:14.118360       1 flags.go:59] FLAG: --config=\"/var/lib/kube-proxy-config/config\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118391745Z"}
+{"log":"I0330 07:24:14.215170       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv4\n","stream":"stderr","time":"2022-03-30T07:24:14.22480297Z"}
+{"log":"I0330 07:24:14.118407       1 flags.go:59] FLAG: --conntrack-tcp-timeout-close-wait=\"1h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120698648Z"}
+{"log":"I0330 07:24:14.118587       1 flags.go:59] FLAG: --metrics-bind-address=\"127.0.0.1:10249\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120853617Z"}
+{"log":"I0330 07:24:14.214953       1 server_others.go:219] creating dualStackProxier for iptables.\n","stream":"stderr","time":"2022-03-30T07:24:14.224784634Z"}
+{"log":"I0330 07:24:14.225715       1 service.go:306] Service kube-system/kube-dns updated: 2 ports\n","stream":"stderr","time":"2022-03-30T07:24:14.226357441Z"}
+{"log":"I0330 07:24:14.324257       1 shared_informer.go:247] Caches are synced for service config \n","stream":"stderr","time":"2022-03-30T07:24:14.324506766Z"}
+{"log":"I0330 07:24:14.118432       1 flags.go:59] FLAG: --healthz-bind-address=\"0.0.0.0:10256\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120713027Z"}
+{"log":"I0330 07:24:14.225677       1 service.go:306] Service default/kubernetes updated: 1 ports\n","stream":"stderr","time":"2022-03-30T07:24:14.226353516Z"}
+{"log":"I0330 07:24:14.118638       1 flags.go:59] FLAG: --show-hidden-metrics-for-version=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120910929Z"}
+{"log":"I0330 07:24:14.194265       1 node.go:172] Successfully retrieved node IP: 10.10.150.101\n","stream":"stderr","time":"2022-03-30T07:24:14.20023694Z"}
+{"log":"I0330 07:24:14.223697       1 config.go:224] Starting endpoint slice config controller\n","stream":"stderr","time":"2022-03-30T07:24:14.224842079Z"}
+{"log":"I0330 07:24:14.118271       1 flags.go:59] FLAG: --bind-address-hard-fail=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118340054Z"}
+{"log":"I0330 07:24:14.118395       1 flags.go:59] FLAG: --conntrack-max-per-core=\"32768\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120688613Z"}
+{"log":"I0330 07:24:14.118458       1 flags.go:59] FLAG: --iptables-min-sync-period=\"1s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120730331Z"}
+{"log":"I0330 07:24:14.194289       1 server_others.go:140] Detected node IP 10.10.150.101\n","stream":"stderr","time":"2022-03-30T07:24:14.200264379Z"}
+{"log":"I0330 07:24:14.194398       1 server_others.go:177] DetectLocalMode: 'ClusterCIDR'\n","stream":"stderr","time":"2022-03-30T07:24:14.200268802Z"}
+{"log":"I0330 07:24:14.216889       1 conntrack.go:83] Setting conntrack hashsize to 32768\n","stream":"stderr","time":"2022-03-30T07:24:14.224825462Z"}
+{"log":"I0330 07:24:14.118453       1 flags.go:59] FLAG: --iptables-masquerade-bit=\"14\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120726724Z"}
+{"log":"I0330 07:24:14.216568       1 conntrack.go:52] Setting nf_conntrack_max to 131072\n","stream":"stderr","time":"2022-03-30T07:24:14.22481643Z"}
+{"log":"I0330 07:24:14.118378       1 flags.go:59] FLAG: --config-sync-period=\"15m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120628599Z"}
+{"log":"I0330 07:24:14.118463       1 flags.go:59] FLAG: --iptables-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120742233Z"}
+{"log":"I0330 07:24:14.120772       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:14.120976287Z"}
+{"log":"I0330 07:24:14.120928       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:14.120980975Z"}
+{"log":"I0330 07:24:14.215437       1 server.go:643] Version: v1.21.2-13+1163bd3b67234e\n","stream":"stderr","time":"2022-03-30T07:24:14.224812101Z"}
+{"log":"I0330 07:24:14.223094       1 config.go:315] Starting service config controller\n","stream":"stderr","time":"2022-03-30T07:24:14.224834882Z"}
+{"log":"I0330 07:24:14.118476       1 flags.go:59] FLAG: --ipvs-min-sync-period=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120749651Z"}
+{"log":"I0330 07:24:14.118501       1 flags.go:59] FLAG: --ipvs-tcpfin-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120772878Z"}
+{"log":"I0330 07:24:14.118555       1 flags.go:59] FLAG: --log-file-max-size=\"1800\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120832743Z"}
+{"log":"I0330 07:24:14.118560       1 flags.go:59] FLAG: --log-flush-frequency=\"5s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120837284Z"}
+{"log":"I0330 07:24:14.216671       1 mount_linux.go:192] Detected OS without systemd\n","stream":"stderr","time":"2022-03-30T07:24:14.224818544Z"}
+{"log":"I0330 07:24:14.118167       1 flags.go:59] FLAG: --alsologtostderr=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118218974Z"}
+{"log":"I0330 07:24:14.118467       1 flags.go:59] FLAG: --ipvs-exclude-cidrs=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120745302Z"}
+{"log":"I0330 07:24:14.118486       1 flags.go:59] FLAG: --ipvs-strict-arp=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120756025Z"}
+{"log":"I0330 07:24:14.118648       1 flags.go:59] FLAG: --skip-log-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.12091733Z"}
+{"log":"I0330 07:24:14.117855       1 flags.go:59] FLAG: --add-dir-header=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118086262Z"}
+{"log":"I0330 07:24:14.118238       1 flags.go:59] FLAG: --bind-address=\"0.0.0.0\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118301001Z"}
+{"log":"I0330 07:24:14.118402       1 flags.go:59] FLAG: --conntrack-min=\"131072\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120694558Z"}
+{"log":"I0330 07:24:14.118491       1 flags.go:59] FLAG: --ipvs-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120759164Z"}
+{"log":"I0330 07:24:14.118577       1 flags.go:59] FLAG: --masquerade-all=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120847258Z"}
+{"log":"I0330 07:24:14.118598       1 flags.go:59] FLAG: --nodeport-addresses=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:14.12086016Z"}
+{"log":"I0330 07:24:14.214937       1 server_others.go:212] Using iptables Proxier.\n","stream":"stderr","time":"2022-03-30T07:24:14.224781512Z"}
+{"log":"I0330 07:24:14.118496       1 flags.go:59] FLAG: --ipvs-tcp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120762503Z"}
+{"log":"I0330 07:24:14.118505       1 flags.go:59] FLAG: --ipvs-udp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120776142Z"}
+{"log":"I0330 07:24:14.118534       1 flags.go:59] FLAG: --log-backtrace-at=\":0\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120792607Z"}
+{"log":"I0330 07:24:14.118418       1 flags.go:59] FLAG: --detect-local-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120705895Z"}
+{"log":"I0330 07:24:14.118439       1 flags.go:59] FLAG: --healthz-port=\"10256\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120716493Z"}
+{"log":"I0330 07:24:14.118593       1 flags.go:59] FLAG: --metrics-port=\"10249\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120856906Z"}
+{"log":"I0330 07:24:14.118612       1 flags.go:59] FLAG: --oom-score-adj=\"-999\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120873956Z"}
+{"log":"I0330 07:24:14.118448       1 flags.go:59] FLAG: --hostname-override=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.12072312Z"}
+{"log":"I0330 07:24:14.118632       1 flags.go:59] FLAG: --proxy-port-range=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120907513Z"}
+{"log":"I0330 07:24:14.118643       1 flags.go:59] FLAG: --skip-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.12091408Z"}
+{"log":"I0330 07:24:14.118653       1 flags.go:59] FLAG: --stderrthreshold=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120920532Z"}
+{"log":"I0330 07:24:14.118658       1 flags.go:59] FLAG: --udp-timeout=\"250ms\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120923752Z"}
+{"log":"I0330 07:24:14.324414       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:14.324606583Z"}
+{"log":"I0330 07:24:14.387703       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:14.387792142Z"}
+{"log":"I0330 07:24:37.247394       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.247593087Z"}
+{"log":"I0330 07:24:37.292179       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.292476608Z"}
+{"log":"I0330 07:24:14.118565       1 flags.go:59] FLAG: --logtostderr=\"true\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120840549Z"}
+{"log":"I0330 07:24:14.118607       1 flags.go:59] FLAG: --one-output=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120870548Z"}
+{"log":"I0330 07:24:14.118682       1 flags.go:59] FLAG: --write-config-to=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120940423Z"}
+{"log":"I0330 07:24:38.326099       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:38.32633225Z"}
+{"log":"I0330 07:24:14.118481       1 flags.go:59] FLAG: --ipvs-scheduler=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120752846Z"}
+{"log":"I0330 07:24:14.118510       1 flags.go:59] FLAG: --kube-api-burst=\"10\"\n","stream":"stderr","time":"2022-03-30T07:24:14.1207794Z"}
+{"log":"I0330 07:24:14.118619       1 flags.go:59] FLAG: --profiling=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120900765Z"}
+{"log":"I0330 07:24:14.118425       1 flags.go:59] FLAG: --feature-gates=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120709614Z"}
+{"log":"I0330 07:24:14.118522       1 flags.go:59] FLAG: --kube-api-qps=\"5\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120785803Z"}
+{"log":"I0330 07:24:14.118340       1 flags.go:59] FLAG: --cluster-cidr=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.118386692Z"}
+{"log":"I0330 07:24:14.118668       1 flags.go:59] FLAG: --version=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120933788Z"}
+{"log":"I0330 07:24:14.118322       1 flags.go:59] FLAG: --cleanup=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.1183487Z"}
+{"log":"I0330 07:24:14.118529       1 flags.go:59] FLAG: --kubeconfig=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120788782Z"}
+{"log":"I0330 07:24:14.118624       1 flags.go:59] FLAG: --proxy-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120904296Z"}
+{"log":"I0330 07:24:14.118444       1 flags.go:59] FLAG: --help=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120719654Z"}
+{"log":"I0330 07:24:14.118550       1 flags.go:59] FLAG: --log-file=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120799342Z"}
+{"log":"I0330 07:24:14.118544       1 flags.go:59] FLAG: --log-dir=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120796098Z"}
+{"log":"I0330 07:24:14.118677       1 flags.go:59] FLAG: --vmodule=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120937004Z"}
+{"log":"I0330 07:24:14.118582       1 flags.go:59] FLAG: --master=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120850333Z"}
+{"log":"I0330 07:24:14.118663       1 flags.go:59] FLAG: --v=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:14.120930695Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:35.205Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Successfully copied CNI plugin binary and config file.\"}\n","stream":"stdout","time":"2022-03-30T07:24:35.206510236Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:31.095Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Starting IPAM daemon in the background ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:31.095892431Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:31.100Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Checking for IPAM connectivity ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:31.104008762Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:35.208Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Foregrounding IPAM daemon ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:35.212924157Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:31.078Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Validating env variables ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:31.079247569Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:33.109Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:33.110081587Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:35.117Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:35.117674913Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:35.194Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Copying config file ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:35.194958393Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:31.079Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Install CNI binaries..\"}\n","stream":"stdout","time":"2022-03-30T07:24:31.080384459Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:41.711Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Successfully copied CNI plugin binary and config file.\"}\n","stream":"stdout","time":"2022-03-30T07:24:41.712015972Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:37.657Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Starting IPAM daemon in the background ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:37.657660972Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:37.661Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Checking for IPAM connectivity ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:37.661669234Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:37.640Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Validating env variables ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:37.641597593Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:41.713Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Foregrounding IPAM daemon ...\"}\n","stream":"stdout","time":"2022-03-30T07:24:41.71337778Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:39.673Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:39.673538941Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:41.681Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Retrying waiting for IPAM-D\"}\n","stream":"stdout","time":"2022-03-30T07:24:41.681627563Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:41.707Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Copying config file ... \"}\n","stream":"stdout","time":"2022-03-30T07:24:41.707897965Z"}
+{"log":"{\"level\":\"info\",\"ts\":\"2022-03-30T07:24:37.642Z\",\"caller\":\"entrypoint.sh\",\"msg\":\"Install CNI binaries..\"}\n","stream":"stdout","time":"2022-03-30T07:24:37.642704659Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000\n","stream":"stderr","time":"2022-03-30T07:24:27.828818388Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    13  100    13    0     0  13000      0 --:--:-- --:--:-- --:--:-- 13000\n","stream":"stderr","time":"2022-03-30T07:24:27.834995257Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000\n","stream":"stderr","time":"2022-03-30T07:24:27.841881003Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    17  100    17    0     0  17000      0 --:--:-- --:--:-- --:--:-- 17000\n","stream":"stderr","time":"2022-03-30T07:24:27.848441728Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAJWJH5qUFSXI0t4BmIBcRoPqpAUjUkgShkjk-Bq0g_oWEI10AQ==' http://169.254.169.254/latest/meta-data/local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:27.829363162Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAJWJH5oJtccgWEh3pM0L5Os1rdRCprzKMXJ5fXdZW905gYejpQ==' http://169.254.169.254/latest/meta-data/mac\n","stream":"stderr","time":"2022-03-30T07:24:27.842527942Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:27.827083499Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:27.836067627Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:27.827755852Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:27.833789991Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:27.840391763Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:27.847093286Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:27.833809246Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:27.840619691Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:27.82776973Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:27.84715494Z"}
+{"log":"++ TOKEN=AQAEAJWJH5qUFSXI0t4BmIBcRoPqpAUjUkgShkjk-Bq0g_oWEI10AQ==\n","stream":"stderr","time":"2022-03-30T07:24:27.829340708Z"}
+{"log":"++ TOKEN=AQAEAJWJH5oJtccgWEh3pM0L5Os1rdRCprzKMXJ5fXdZW905gYejpQ==\n","stream":"stderr","time":"2022-03-30T07:24:27.842327898Z"}
+{"log":"+ PLUGIN_BINS='loopback portmap bandwidth aws-cni-support.sh'\n","stream":"stderr","time":"2022-03-30T07:24:27.808699532Z"}
+{"log":"+ install aws-cni-support.sh /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:27.819520211Z"}
+{"log":"+ cat /proc/sys/net/ipv4/conf/eth0/rp_filter\n","stream":"stderr","time":"2022-03-30T07:24:27.853994604Z"}
+{"log":"+ sysctl -w net.ipv4.conf.eth0.rp_filter=2\n","stream":"stderr","time":"2022-03-30T07:24:27.852040517Z"}
+{"log":"+ echo 'Copying CNI plugin binaries ... '\n","stream":"stderr","time":"2022-03-30T07:24:27.808734911Z"}
+{"log":"++ grep -F 'link/ether 02:c7:07:de:ea:b3'\n","stream":"stderr","time":"2022-03-30T07:24:27.850938054Z"}
+{"log":"+ sysctl -e -w net.ipv4.tcp_early_demux=1\n","stream":"stderr","time":"2022-03-30T07:24:27.854934163Z"}
+{"log":"+ echo 'Configure rp_filter loose... '\n","stream":"stderr","time":"2022-03-30T07:24:27.827056187Z"}
+{"log":"+ HOST_CNI_BIN_PATH=/host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:27.808731875Z"}
+{"log":"+ install bandwidth /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:27.816344597Z"}
+{"log":"+ install loopback /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:27.808740946Z"}
+{"log":"+ '[' '!' -f aws-cni-support.sh ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.808729077Z"}
+{"log":"+ install portmap /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:27.815071881Z"}
+{"log":"Copying CNI plugin binaries ... \n","stream":"stdout","time":"2022-03-30T07:24:27.808392187Z"}
+{"log":"+ echo 'CNI init container done'\n","stream":"stderr","time":"2022-03-30T07:24:27.856785718Z"}
+{"log":"+ PRIMARY_MAC=02:c7:07:de:ea:b3\n","stream":"stderr","time":"2022-03-30T07:24:27.849014194Z"}
+{"log":"net.ipv4.conf.eth0.rp_filter = 2\n","stream":"stdout","time":"2022-03-30T07:24:27.85368854Z"}
+{"log":"Configure rp_filter loose... \n","stream":"stdout","time":"2022-03-30T07:24:27.827117875Z"}
+{"log":"++ awk '-F[ :]+' '{print $2}'\n","stream":"stderr","time":"2022-03-30T07:24:27.850942238Z"}
+{"log":"net.ipv4.tcp_early_demux = 1\n","stream":"stdout","time":"2022-03-30T07:24:27.85635607Z"}
+{"log":"+ '[' '!' -f bandwidth ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.808723417Z"}
+{"log":"++ get_metadata local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:27.827079244Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.808708535Z"}
+{"log":"+ '[' '!' -f loopback ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.808711658Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.808714649Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.808720389Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.808726227Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.808737895Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.815054621Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.816331985Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:27.819507012Z"}
+{"log":"++ meta=02:c7:07:de:ea:b3\n","stream":"stderr","time":"2022-03-30T07:24:27.848959895Z"}
+{"log":"++ echo 02:c7:07:de:ea:b3\n","stream":"stderr","time":"2022-03-30T07:24:27.848975697Z"}
+{"log":"+ '[' '!' -f portmap ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.808717511Z"}
+{"log":"+ HOST_IP=10.10.121.205\n","stream":"stderr","time":"2022-03-30T07:24:27.835499754Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.854878554Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.856730728Z"}
+{"log":"CNI init container done\n","stream":"stdout","time":"2022-03-30T07:24:27.856877186Z"}
+{"log":"++ meta=10.10.121.205\n","stream":"stderr","time":"2022-03-30T07:24:27.835436722Z"}
+{"log":"++ echo 10.10.121.205\n","stream":"stderr","time":"2022-03-30T07:24:27.835496393Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.829360128Z"}
+{"log":"++ get_metadata mac\n","stream":"stderr","time":"2022-03-30T07:24:27.836059077Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.842349482Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.829357003Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.835446299Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.835466746Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.842346337Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.848969791Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:27.848972844Z"}
+{"log":"++ ip -o link show\n","stream":"stderr","time":"2022-03-30T07:24:27.850927833Z"}
+{"log":"+ PRIMARY_IF=eth0\n","stream":"stderr","time":"2022-03-30T07:24:27.851929013Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:27.829349881Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:27.842339391Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:27.829353711Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:27.842343021Z"}
+{"log":"2\n","stream":"stdout","time":"2022-03-30T07:24:27.854667963Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000\n","stream":"stderr","time":"2022-03-30T07:24:33.688052364Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  18666      0 --:--:-- --:--:-- --:--:-- 18666\n","stream":"stderr","time":"2022-03-30T07:24:33.698208714Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000\n","stream":"stderr","time":"2022-03-30T07:24:33.68260863Z"}
+{"log":"\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100    17  100    17    0     0  17000      0 --:--:-- --:--:-- --:--:-- 17000\n","stream":"stderr","time":"2022-03-30T07:24:33.7060771Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAOJjYcKHSRU-tcuRCi3eOMVa8jru0QszqHLOjDJqo0A2v7krRw==' http://169.254.169.254/latest/meta-data/local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:33.682925463Z"}
+{"log":"+++ curl -H 'X-aws-ec2-metadata-token: AQAEAOJjYcI4Jl9jFPHfklu1GUaXzQgcuiyJUy-KxnxE_C7u1yn0UQ==' http://169.254.169.254/latest/meta-data/mac\n","stream":"stderr","time":"2022-03-30T07:24:33.699522023Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:33.671803514Z"}
+{"log":"+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'\n","stream":"stderr","time":"2022-03-30T07:24:33.689889225Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:33.679520725Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:33.687754936Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:33.694563888Z"}
+{"log":"  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n","stream":"stderr","time":"2022-03-30T07:24:33.704697682Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:33.679540577Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:33.687774028Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:33.694583963Z"}
+{"log":"                                 Dload  Upload   Total   Spent    Left  Speed\n","stream":"stderr","time":"2022-03-30T07:24:33.704743591Z"}
+{"log":"++ TOKEN=AQAEAOJjYcKHSRU-tcuRCi3eOMVa8jru0QszqHLOjDJqo0A2v7krRw==\n","stream":"stderr","time":"2022-03-30T07:24:33.682645376Z"}
+{"log":"++ TOKEN=AQAEAOJjYcI4Jl9jFPHfklu1GUaXzQgcuiyJUy-KxnxE_C7u1yn0UQ==\n","stream":"stderr","time":"2022-03-30T07:24:33.699353829Z"}
+{"log":"+ PLUGIN_BINS='loopback portmap bandwidth aws-cni-support.sh'\n","stream":"stderr","time":"2022-03-30T07:24:33.659931857Z"}
+{"log":"+ install aws-cni-support.sh /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:33.670131099Z"}
+{"log":"+ cat /proc/sys/net/ipv4/conf/eth0/rp_filter\n","stream":"stderr","time":"2022-03-30T07:24:33.711583786Z"}
+{"log":"+ sysctl -w net.ipv4.conf.eth0.rp_filter=2\n","stream":"stderr","time":"2022-03-30T07:24:33.709861976Z"}
+{"log":"+ echo 'Copying CNI plugin binaries ... '\n","stream":"stderr","time":"2022-03-30T07:24:33.65999503Z"}
+{"log":"++ grep -F 'link/ether 06:8b:d8:8f:e4:d3'\n","stream":"stderr","time":"2022-03-30T07:24:33.70846948Z"}
+{"log":"+ sysctl -e -w net.ipv4.tcp_early_demux=1\n","stream":"stderr","time":"2022-03-30T07:24:33.71238026Z"}
+{"log":"+ echo 'Configure rp_filter loose... '\n","stream":"stderr","time":"2022-03-30T07:24:33.671293376Z"}
+{"log":"+ HOST_CNI_BIN_PATH=/host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:33.659991731Z"}
+{"log":"+ install bandwidth /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:33.666786717Z"}
+{"log":"+ install loopback /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:33.661922919Z"}
+{"log":"+ install portmap /host/opt/cni/bin\n","stream":"stderr","time":"2022-03-30T07:24:33.663639505Z"}
+{"log":"+ '[' '!' -f aws-cni-support.sh ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.65998863Z"}
+{"log":"Copying CNI plugin binaries ... \n","stream":"stdout","time":"2022-03-30T07:24:33.660043522Z"}
+{"log":"net.ipv4.conf.eth0.rp_filter = 2\n","stream":"stdout","time":"2022-03-30T07:24:33.711290571Z"}
+{"log":"+ echo 'CNI init container done'\n","stream":"stderr","time":"2022-03-30T07:24:33.714254264Z"}
+{"log":"+ PRIMARY_MAC=06:8b:d8:8f:e4:d3\n","stream":"stderr","time":"2022-03-30T07:24:33.706542263Z"}
+{"log":"Configure rp_filter loose... \n","stream":"stdout","time":"2022-03-30T07:24:33.671202939Z"}
+{"log":"++ awk '-F[ :]+' '{print $2}'\n","stream":"stderr","time":"2022-03-30T07:24:33.708551173Z"}
+{"log":"net.ipv4.tcp_early_demux = 1\n","stream":"stdout","time":"2022-03-30T07:24:33.713878677Z"}
+{"log":"+ '[' '!' -f bandwidth ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.659982284Z"}
+{"log":"++ get_metadata local-ipv4\n","stream":"stderr","time":"2022-03-30T07:24:33.671300643Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.659966031Z"}
+{"log":"+ '[' '!' -f loopback ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.659970041Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.659973057Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.659979321Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.659985513Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.663628597Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.666772304Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.670094122Z"}
+{"log":"++ meta=06:8b:d8:8f:e4:d3\n","stream":"stderr","time":"2022-03-30T07:24:33.706104108Z"}
+{"log":"++ echo 06:8b:d8:8f:e4:d3\n","stream":"stderr","time":"2022-03-30T07:24:33.706290905Z"}
+{"log":"+ '[' '!' -f portmap ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.659975997Z"}
+{"log":"+ for b in '$PLUGIN_BINS'\n","stream":"stderr","time":"2022-03-30T07:24:33.66190522Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.712360758Z"}
+{"log":"+ '[' false == true ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.714206806Z"}
+{"log":"CNI init container done\n","stream":"stdout","time":"2022-03-30T07:24:33.714270008Z"}
+{"log":"+ HOST_IP=10.10.65.226\n","stream":"stderr","time":"2022-03-30T07:24:33.689347785Z"}
+{"log":"++ meta=10.10.65.226\n","stream":"stderr","time":"2022-03-30T07:24:33.689272898Z"}
+{"log":"++ echo 10.10.65.226\n","stream":"stderr","time":"2022-03-30T07:24:33.689295609Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.682659717Z"}
+{"log":"++ '[' 60 -eq 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.699377537Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.682656209Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.689292451Z"}
+{"log":"++ get_metadata mac\n","stream":"stderr","time":"2022-03-30T07:24:33.68972934Z"}
+{"log":"++ '[' 1 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.699374146Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.706180144Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.706284935Z"}
+{"log":"++ ip -o link show\n","stream":"stderr","time":"2022-03-30T07:24:33.708456954Z"}
+{"log":"++ '[' 0 -gt 0 ']'\n","stream":"stderr","time":"2022-03-30T07:24:33.68928912Z"}
+{"log":"+ PRIMARY_IF=eth0\n","stream":"stderr","time":"2022-03-30T07:24:33.709588678Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:33.682650224Z"}
+{"log":"++ attempts=60\n","stream":"stderr","time":"2022-03-30T07:24:33.69936726Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:33.682653338Z"}
+{"log":"++ false\n","stream":"stderr","time":"2022-03-30T07:24:33.699371079Z"}
+{"log":"2\n","stream":"stdout","time":"2022-03-30T07:24:33.712187Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter delivery_stream = 'eks-stream'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170878375Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] normal synchronization mode, checksum disabled, max_chunks_up=128\n","stream":"stderr","time":"2022-03-30T08:08:01.162558954Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter region = 'us-west-2'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170896565Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter time_key_format = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170973955Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter data_keys = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170900583Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter role_arn = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170960836Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter endpoint = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170966024Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter time_key = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.170970614Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2019-2020 The Fluent Bit Authors\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.161878187Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] version=1.0.3, initializing...\n","stream":"stderr","time":"2022-03-30T08:08:01.162408545Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2015-2018 Treasure Data\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.161883598Z"}
+{"log":"* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd\n","stream":"stderr","time":"2022-03-30T08:08:01.161887348Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [sp] stream processor started\n","stream":"stderr","time":"2022-03-30T08:08:01.171212305Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [engine] started (pid=1)\n","stream":"stderr","time":"2022-03-30T08:08:01.162620937Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] in-memory\n","stream":"stderr","time":"2022-03-30T08:08:01.162494336Z"}
+{"log":"AWS for Fluent Bit Container Image Version 2.3.1\n","stream":"stdout","time":"2022-03-30T08:08:01.130696167Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.127963449Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.127998715Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.130626711Z"}
+{"log":"\u001b[1mFluent Bit v1.4.2\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.161848684Z"}
+{"log":"* https://fluentbit.io\n","stream":"stderr","time":"2022-03-30T08:08:01.161890248Z"}
+{"log":"\n","stream":"stderr","time":"2022-03-30T08:08:01.161893468Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter delivery_stream = 'eks-stream'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285243029Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] normal synchronization mode, checksum disabled, max_chunks_up=128\n","stream":"stderr","time":"2022-03-30T08:08:01.277756979Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter region = 'us-west-2'\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285827755Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter time_key_format = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.28586306Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter data_keys = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285837167Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter role_arn = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285855139Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter endpoint = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285858102Z"}
+{"log":"time=\"2022-03-30T08:08:01Z\" level=info msg=\"[firehose 0] plugin parameter time_key = ''\n\"\n","stream":"stdout","time":"2022-03-30T08:08:01.285860547Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2019-2020 The Fluent Bit Authors\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.27638842Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] version=1.0.3, initializing...\n","stream":"stderr","time":"2022-03-30T08:08:01.277720359Z"}
+{"log":"* \u001b[1m\u001b[93mCopyright (C) 2015-2018 Treasure Data\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.276397268Z"}
+{"log":"* Fluent Bit is a CNCF sub-project under the umbrella of Fluentd\n","stream":"stderr","time":"2022-03-30T08:08:01.276401008Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [sp] stream processor started\n","stream":"stderr","time":"2022-03-30T08:08:01.285878977Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [engine] started (pid=1)\n","stream":"stderr","time":"2022-03-30T08:08:01.277761476Z"}
+{"log":"[2022/03/30 08:08:01] [ info] [storage] in-memory\n","stream":"stderr","time":"2022-03-30T08:08:01.277740374Z"}
+{"log":"AWS for Fluent Bit Container Image Version 2.3.1\n","stream":"stdout","time":"2022-03-30T08:08:01.240582707Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.239137949Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.240833995Z"}
+{"log":"tput: No value for $TERM and no -T specified\n","stream":"stderr","time":"2022-03-30T08:08:01.241193276Z"}
+{"log":"\u001b[1mFluent Bit v1.4.2\u001b[0m\n","stream":"stderr","time":"2022-03-30T08:08:01.276340195Z"}
+{"log":"* https://fluentbit.io\n","stream":"stderr","time":"2022-03-30T08:08:01.276429816Z"}
+{"log":"\n","stream":"stderr","time":"2022-03-30T08:08:01.276434218Z"}
+{"log":"W0330 07:24:32.099932       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:32.100002771Z"}
+{"log":"W0330 07:24:32.101087       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:32.101681707Z"}
+{"log":"W0330 07:31:10.104852       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:31:10.104970356Z"}
+{"log":"W0330 07:36:44.107671       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:36:44.108014541Z"}
+{"log":"W0330 07:46:09.110859       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:46:09.111024453Z"}
+{"log":"W0330 07:55:48.113658       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:55:48.113834204Z"}
+{"log":"W0330 08:01:31.117173       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:01:31.117309586Z"}
+{"log":"W0330 08:07:25.120704       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:07:25.120867078Z"}
+{"log":"I0330 07:24:37.247843       1 proxier.go:841] \"Stale service\" protocol=\"udp\" svcPortName=\"kube-system/kube-dns:dns\" clusterIP=\"172.20.0.10\"\n","stream":"stderr","time":"2022-03-30T07:24:37.254599025Z"}
+{"log":"I0330 07:24:32.077988       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv4 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:32.078875812Z"}
+{"log":"I0330 07:24:32.078101       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv6 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:32.078890368Z"}
+{"log":"I0330 07:24:32.197681       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:32.199153439Z"}
+{"log":"I0330 07:24:32.197777       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:32.199157935Z"}
+{"log":"I0330 07:24:32.197878       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns-tcp\" at 172.20.0.10:53/TCP\n","stream":"stderr","time":"2022-03-30T07:24:32.19917194Z"}
+{"log":"I0330 07:24:32.096992       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400\n","stream":"stderr","time":"2022-03-30T07:24:32.097499106Z"}
+{"log":"I0330 07:24:32.197839       1 service.go:421] Adding new service port \"default/kubernetes:https\" at 172.20.0.1:443/TCP\n","stream":"stderr","time":"2022-03-30T07:24:32.199164933Z"}
+{"log":"I0330 07:24:32.197867       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns\" at 172.20.0.10:53/UDP\n","stream":"stderr","time":"2022-03-30T07:24:32.199168469Z"}
+{"log":"I0330 07:24:32.077938       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv4 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:32.078872028Z"}
+{"log":"I0330 07:24:32.078064       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv6 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:32.078886992Z"}
+{"log":"I0330 07:24:32.097051       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600\n","stream":"stderr","time":"2022-03-30T07:24:32.097522648Z"}
+{"log":"W0330 07:24:32.077772       1 server_others.go:496] detect-local-mode set to ClusterCIDR, but no cluster CIDR defined\n","stream":"stderr","time":"2022-03-30T07:24:32.078860971Z"}
+{"log":"W0330 07:24:32.077778       1 server_others.go:545] detect-local-mode: ClusterCIDR , defaulting to no-op detect-local\n","stream":"stderr","time":"2022-03-30T07:24:32.078864877Z"}
+{"log":"I0330 07:24:31.986458       1 flags.go:59] FLAG: --kube-api-content-type=\"application/vnd.kubernetes.protobuf\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986905253Z"}
+{"log":"I0330 07:24:31.986516       1 flags.go:59] FLAG: --machine-id-file=\"/etc/machine-id,/var/lib/dbus/machine-id\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986933249Z"}
+{"log":"I0330 07:24:32.077857       1 utils.go:375] Changed sysctl \"net/ipv4/conf/all/route_localnet\": 0 -\u003e 1\n","stream":"stderr","time":"2022-03-30T07:24:32.07886813Z"}
+{"log":"I0330 07:24:32.097338       1 shared_informer.go:240] Waiting for caches to sync for endpoint slice config\n","stream":"stderr","time":"2022-03-30T07:24:32.097536871Z"}
+{"log":"I0330 07:24:32.077711       1 server_others.go:206] kube-proxy running in dual-stack mode, IPv4-primary\n","stream":"stderr","time":"2022-03-30T07:24:32.078736363Z"}
+{"log":"I0330 07:24:32.079298       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072\n","stream":"stderr","time":"2022-03-30T07:24:32.07939316Z"}
+{"log":"I0330 07:24:31.986287       1 flags.go:59] FLAG: --boot-id-file=\"/proc/sys/kernel/random/boot_id\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986786423Z"}
+{"log":"I0330 07:24:32.097305       1 shared_informer.go:240] Waiting for caches to sync for service config\n","stream":"stderr","time":"2022-03-30T07:24:32.097530388Z"}
+{"log":"I0330 07:24:32.197542       1 shared_informer.go:247] Caches are synced for endpoint slice config \n","stream":"stderr","time":"2022-03-30T07:24:32.199117018Z"}
+{"log":"I0330 07:24:37.296059       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"48.318283ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.296201255Z"}
+{"log":"I0330 07:24:37.328192       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"32.085939ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.328302449Z"}
+{"log":"I0330 07:24:38.363559       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"34.773442ms\"\n","stream":"stderr","time":"2022-03-30T07:24:38.363670096Z"}
+{"log":"I0330 07:24:31.986336       1 flags.go:59] FLAG: --conntrack-tcp-timeout-established=\"24h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986814373Z"}
+{"log":"I0330 07:24:32.078018       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv4\n","stream":"stderr","time":"2022-03-30T07:24:32.078882835Z"}
+{"log":"I0330 07:24:32.078122       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv6\n","stream":"stderr","time":"2022-03-30T07:24:32.078894415Z"}
+{"log":"I0330 07:24:32.267193       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"69.35651ms\"\n","stream":"stderr","time":"2022-03-30T07:24:32.272606123Z"}
+{"log":"I0330 07:24:32.309479       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"42.24848ms\"\n","stream":"stderr","time":"2022-03-30T07:24:32.309551633Z"}
+{"log":"I0330 07:24:31.986307       1 flags.go:59] FLAG: --config=\"/var/lib/kube-proxy-config/config\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986797216Z"}
+{"log":"I0330 07:24:31.986330       1 flags.go:59] FLAG: --conntrack-tcp-timeout-close-wait=\"1h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986811007Z"}
+{"log":"I0330 07:24:31.986532       1 flags.go:59] FLAG: --metrics-bind-address=\"127.0.0.1:10249\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986943122Z"}
+{"log":"I0330 07:24:32.077765       1 server_others.go:219] creating dualStackProxier for iptables.\n","stream":"stderr","time":"2022-03-30T07:24:32.078857315Z"}
+{"log":"I0330 07:24:32.099839       1 service.go:306] Service kube-system/kube-dns updated: 2 ports\n","stream":"stderr","time":"2022-03-30T07:24:32.099921636Z"}
+{"log":"I0330 07:24:32.197792       1 shared_informer.go:247] Caches are synced for service config \n","stream":"stderr","time":"2022-03-30T07:24:32.199161543Z"}
+{"log":"I0330 07:24:31.986359       1 flags.go:59] FLAG: --healthz-bind-address=\"0.0.0.0:10256\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986823286Z"}
+{"log":"I0330 07:24:32.099803       1 service.go:306] Service default/kubernetes updated: 1 ports\n","stream":"stderr","time":"2022-03-30T07:24:32.099904988Z"}
+{"log":"I0330 07:24:31.986579       1 flags.go:59] FLAG: --show-hidden-metrics-for-version=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986970443Z"}
+{"log":"I0330 07:24:32.060546       1 node.go:172] Successfully retrieved node IP: 10.10.65.226\n","stream":"stderr","time":"2022-03-30T07:24:32.060672465Z"}
+{"log":"I0330 07:24:32.097329       1 config.go:224] Starting endpoint slice config controller\n","stream":"stderr","time":"2022-03-30T07:24:32.097533797Z"}
+{"log":"I0330 07:24:31.986281       1 flags.go:59] FLAG: --bind-address-hard-fail=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986783026Z"}
+{"log":"I0330 07:24:31.986318       1 flags.go:59] FLAG: --conntrack-max-per-core=\"32768\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986804093Z"}
+{"log":"I0330 07:24:31.986393       1 flags.go:59] FLAG: --iptables-min-sync-period=\"1s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986838522Z"}
+{"log":"I0330 07:24:32.060701       1 server_others.go:177] DetectLocalMode: 'ClusterCIDR'\n","stream":"stderr","time":"2022-03-30T07:24:32.060748349Z"}
+{"log":"I0330 07:24:32.079677       1 conntrack.go:83] Setting conntrack hashsize to 32768\n","stream":"stderr","time":"2022-03-30T07:24:32.079763868Z"}
+{"log":"I0330 07:24:31.986381       1 flags.go:59] FLAG: --iptables-masquerade-bit=\"14\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986835279Z"}
+{"log":"I0330 07:24:32.060578       1 server_others.go:140] Detected node IP 10.10.65.226\n","stream":"stderr","time":"2022-03-30T07:24:32.060693557Z"}
+{"log":"I0330 07:24:32.079330       1 conntrack.go:52] Setting nf_conntrack_max to 131072\n","stream":"stderr","time":"2022-03-30T07:24:32.079402557Z"}
+{"log":"I0330 07:24:31.986313       1 flags.go:59] FLAG: --config-sync-period=\"15m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986800666Z"}
+{"log":"I0330 07:24:31.986402       1 flags.go:59] FLAG: --iptables-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986841822Z"}
+{"log":"I0330 07:24:31.989318       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:31.989576068Z"}
+{"log":"I0330 07:24:31.989438       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:31.989592328Z"}
+{"log":"I0330 07:24:32.078296       1 server.go:643] Version: v1.21.2-13+1163bd3b67234e\n","stream":"stderr","time":"2022-03-30T07:24:32.078995953Z"}
+{"log":"I0330 07:24:32.097290       1 config.go:315] Starting service config controller\n","stream":"stderr","time":"2022-03-30T07:24:32.097527137Z"}
+{"log":"I0330 07:24:31.986422       1 flags.go:59] FLAG: --ipvs-min-sync-period=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986873328Z"}
+{"log":"I0330 07:24:31.986444       1 flags.go:59] FLAG: --ipvs-tcpfin-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986894738Z"}
+{"log":"I0330 07:24:31.986506       1 flags.go:59] FLAG: --log-flush-frequency=\"5s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986926913Z"}
+{"log":"I0330 07:24:31.986588       1 flags.go:59] FLAG: --skip-log-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986976803Z"}
+{"log":"I0330 07:24:32.079433       1 mount_linux.go:192] Detected OS without systemd\n","stream":"stderr","time":"2022-03-30T07:24:32.079513339Z"}
+{"log":"I0330 07:24:31.986408       1 flags.go:59] FLAG: --ipvs-exclude-cidrs=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986868749Z"}
+{"log":"I0330 07:24:31.986431       1 flags.go:59] FLAG: --ipvs-strict-arp=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986880071Z"}
+{"log":"I0330 07:24:31.986501       1 flags.go:59] FLAG: --log-file-max-size=\"1800\"\n","stream":"stderr","time":"2022-03-30T07:24:31.98692382Z"}
+{"log":"I0330 07:24:31.986546       1 flags.go:59] FLAG: --nodeport-addresses=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986950013Z"}
+{"log":"I0330 07:24:31.986212       1 flags.go:59] FLAG: --add-dir-header=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986722279Z"}
+{"log":"I0330 07:24:31.986269       1 flags.go:59] FLAG: --alsologtostderr=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.98677328Z"}
+{"log":"I0330 07:24:31.986275       1 flags.go:59] FLAG: --bind-address=\"0.0.0.0\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986779368Z"}
+{"log":"I0330 07:24:31.986435       1 flags.go:59] FLAG: --ipvs-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986883203Z"}
+{"log":"I0330 07:24:31.986325       1 flags.go:59] FLAG: --conntrack-min=\"131072\"\n","stream":"stderr","time":"2022-03-30T07:24:31.98680748Z"}
+{"log":"I0330 07:24:31.986440       1 flags.go:59] FLAG: --ipvs-tcp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986886655Z"}
+{"log":"I0330 07:24:31.986449       1 flags.go:59] FLAG: --ipvs-udp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986898436Z"}
+{"log":"I0330 07:24:31.986479       1 flags.go:59] FLAG: --log-backtrace-at=\":0\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986914839Z"}
+{"log":"I0330 07:24:31.986522       1 flags.go:59] FLAG: --masquerade-all=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.98693675Z"}
+{"log":"I0330 07:24:32.077751       1 server_others.go:212] Using iptables Proxier.\n","stream":"stderr","time":"2022-03-30T07:24:32.07885321Z"}
+{"log":"I0330 07:24:31.986341       1 flags.go:59] FLAG: --detect-local-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986817691Z"}
+{"log":"I0330 07:24:31.986366       1 flags.go:59] FLAG: --healthz-port=\"10256\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986826213Z"}
+{"log":"I0330 07:24:31.986376       1 flags.go:59] FLAG: --hostname-override=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986832538Z"}
+{"log":"I0330 07:24:31.986542       1 flags.go:59] FLAG: --metrics-port=\"10249\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986946404Z"}
+{"log":"I0330 07:24:31.986556       1 flags.go:59] FLAG: --oom-score-adj=\"-999\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986956626Z"}
+{"log":"I0330 07:24:31.986584       1 flags.go:59] FLAG: --skip-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986973861Z"}
+{"log":"I0330 07:24:31.986454       1 flags.go:59] FLAG: --kube-api-burst=\"10\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986902071Z"}
+{"log":"I0330 07:24:31.986573       1 flags.go:59] FLAG: --proxy-port-range=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986967053Z"}
+{"log":"I0330 07:24:31.986593       1 flags.go:59] FLAG: --stderrthreshold=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986979995Z"}
+{"log":"I0330 07:24:31.986599       1 flags.go:59] FLAG: --udp-timeout=\"250ms\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986983164Z"}
+{"log":"I0330 07:24:32.197928       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:32.199175588Z"}
+{"log":"I0330 07:24:32.267230       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:32.272624197Z"}
+{"log":"I0330 07:24:37.247873       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.258974808Z"}
+{"log":"I0330 07:24:37.296151       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.296226236Z"}
+{"log":"I0330 07:24:38.328852       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:38.328994296Z"}
+{"log":"I0330 07:24:31.986511       1 flags.go:59] FLAG: --logtostderr=\"true\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986930199Z"}
+{"log":"I0330 07:24:31.986551       1 flags.go:59] FLAG: --one-output=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986953326Z"}
+{"log":"I0330 07:24:31.986637       1 flags.go:59] FLAG: --write-config-to=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986997945Z"}
+{"log":"I0330 07:24:31.986427       1 flags.go:59] FLAG: --ipvs-scheduler=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986876736Z"}
+{"log":"I0330 07:24:31.986561       1 flags.go:59] FLAG: --profiling=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986959956Z"}
+{"log":"I0330 07:24:31.986352       1 flags.go:59] FLAG: --feature-gates=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986820539Z"}
+{"log":"I0330 07:24:31.986302       1 flags.go:59] FLAG: --cluster-cidr=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986793793Z"}
+{"log":"I0330 07:24:31.986609       1 flags.go:59] FLAG: --version=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986992103Z"}
+{"log":"I0330 07:24:31.986465       1 flags.go:59] FLAG: --kube-api-qps=\"5\"\n","stream":"stderr","time":"2022-03-30T07:24:31.9869085Z"}
+{"log":"I0330 07:24:31.986298       1 flags.go:59] FLAG: --cleanup=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.9867903Z"}
+{"log":"I0330 07:24:31.986474       1 flags.go:59] FLAG: --kubeconfig=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986911857Z"}
+{"log":"I0330 07:24:31.986566       1 flags.go:59] FLAG: --proxy-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986963616Z"}
+{"log":"I0330 07:24:31.986371       1 flags.go:59] FLAG: --help=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986829358Z"}
+{"log":"I0330 07:24:31.986496       1 flags.go:59] FLAG: --log-file=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986920613Z"}
+{"log":"I0330 07:24:31.986491       1 flags.go:59] FLAG: --log-dir=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986917855Z"}
+{"log":"I0330 07:24:31.986626       1 flags.go:59] FLAG: --vmodule=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986994944Z"}
+{"log":"I0330 07:24:31.986527       1 flags.go:59] FLAG: --master=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986940256Z"}
+{"log":"I0330 07:24:31.986604       1 flags.go:59] FLAG: --v=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:31.986988951Z"}
+{"log":"W0330 07:24:27.304152       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:27.304236852Z"}
+{"log":"W0330 07:24:27.311004       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:24:27.311091223Z"}
+{"log":"W0330 07:37:57.318553       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:37:57.318662654Z"}
+{"log":"W0330 07:43:42.321238       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:43:42.321374677Z"}
+{"log":"W0330 07:52:13.323598       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:52:13.323752137Z"}
+{"log":"W0330 08:05:19.329195       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:05:19.329309396Z"}
+{"log":"W0330 07:30:47.315618       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:30:47.31575498Z"}
+{"log":"W0330 07:59:20.326743       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T07:59:20.32686323Z"}
+{"log":"I0330 07:24:37.247088       1 proxier.go:841] \"Stale service\" protocol=\"udp\" svcPortName=\"kube-system/kube-dns:dns\" clusterIP=\"172.20.0.10\"\n","stream":"stderr","time":"2022-03-30T07:24:37.247231491Z"}
+{"log":"I0330 07:24:27.287552       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv4 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:27.289599848Z"}
+{"log":"I0330 07:24:27.287645       1 proxier.go:330] \"iptables sync params\" ipFamily=IPv6 minSyncPeriod=\"1s\" syncPeriod=\"30s\" burstSyncs=2\n","stream":"stderr","time":"2022-03-30T07:24:27.289620721Z"}
+{"log":"I0330 07:24:27.400819       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:27.401436671Z"}
+{"log":"I0330 07:24:27.400896       1 proxier.go:816] \"Not syncing iptables until Services and Endpoints have been received from master\"\n","stream":"stderr","time":"2022-03-30T07:24:27.40144119Z"}
+{"log":"I0330 07:24:27.400989       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns-tcp\" at 172.20.0.10:53/TCP\n","stream":"stderr","time":"2022-03-30T07:24:27.401555631Z"}
+{"log":"I0330 07:24:27.299735       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_established' to 86400\n","stream":"stderr","time":"2022-03-30T07:24:27.300296081Z"}
+{"log":"I0330 07:24:27.400958       1 service.go:421] Adding new service port \"default/kubernetes:https\" at 172.20.0.1:443/TCP\n","stream":"stderr","time":"2022-03-30T07:24:27.401448438Z"}
+{"log":"I0330 07:24:27.400979       1 service.go:421] Adding new service port \"kube-system/kube-dns:dns\" at 172.20.0.10:53/UDP\n","stream":"stderr","time":"2022-03-30T07:24:27.40155031Z"}
+{"log":"I0330 07:24:27.287516       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv4 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:27.289596079Z"}
+{"log":"I0330 07:24:27.287621       1 proxier.go:282] \"using iptables mark for masquerade\" ipFamily=IPv6 mark=\"0x00004000\"\n","stream":"stderr","time":"2022-03-30T07:24:27.289608957Z"}
+{"log":"I0330 07:24:27.299927       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_tcp_timeout_close_wait' to 3600\n","stream":"stderr","time":"2022-03-30T07:24:27.300316888Z"}
+{"log":"W0330 07:24:27.287370       1 server_others.go:496] detect-local-mode set to ClusterCIDR, but no cluster CIDR defined\n","stream":"stderr","time":"2022-03-30T07:24:27.289585722Z"}
+{"log":"W0330 07:24:27.287374       1 server_others.go:545] detect-local-mode: ClusterCIDR , defaulting to no-op detect-local\n","stream":"stderr","time":"2022-03-30T07:24:27.289588825Z"}
+{"log":"I0330 07:24:27.171521       1 flags.go:59] FLAG: --kube-api-content-type=\"application/vnd.kubernetes.protobuf\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181008864Z"}
+{"log":"I0330 07:24:27.171714       1 flags.go:59] FLAG: --machine-id-file=\"/etc/machine-id,/var/lib/dbus/machine-id\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181037238Z"}
+{"log":"I0330 07:24:27.287437       1 utils.go:375] Changed sysctl \"net/ipv4/conf/all/route_localnet\": 0 -\u003e 1\n","stream":"stderr","time":"2022-03-30T07:24:27.289592153Z"}
+{"log":"I0330 07:24:27.300388       1 shared_informer.go:240] Waiting for caches to sync for endpoint slice config\n","stream":"stderr","time":"2022-03-30T07:24:27.300456254Z"}
+{"log":"I0330 07:24:27.287319       1 server_others.go:206] kube-proxy running in dual-stack mode, IPv4-primary\n","stream":"stderr","time":"2022-03-30T07:24:27.289557769Z"}
+{"log":"I0330 07:24:27.288828       1 conntrack.go:100] Set sysctl 'net/netfilter/nf_conntrack_max' to 131072\n","stream":"stderr","time":"2022-03-30T07:24:27.289631106Z"}
+{"log":"I0330 07:24:27.171019       1 flags.go:59] FLAG: --boot-id-file=\"/proc/sys/kernel/random/boot_id\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180895113Z"}
+{"log":"I0330 07:24:27.300193       1 shared_informer.go:240] Waiting for caches to sync for service config\n","stream":"stderr","time":"2022-03-30T07:24:27.300324574Z"}
+{"log":"I0330 07:24:27.400703       1 shared_informer.go:247] Caches are synced for endpoint slice config \n","stream":"stderr","time":"2022-03-30T07:24:27.401417972Z"}
+{"log":"I0330 07:24:27.460439       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"59.473172ms\"\n","stream":"stderr","time":"2022-03-30T07:24:27.463222141Z"}
+{"log":"I0330 07:24:27.505290       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"44.813595ms\"\n","stream":"stderr","time":"2022-03-30T07:24:27.505385276Z"}
+{"log":"I0330 07:24:37.320353       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"30.153376ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.320461355Z"}
+{"log":"I0330 07:24:38.352820       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"32.339313ms\"\n","stream":"stderr","time":"2022-03-30T07:24:38.353013044Z"}
+{"log":"I0330 07:24:27.171170       1 flags.go:59] FLAG: --conntrack-tcp-timeout-established=\"24h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180921274Z"}
+{"log":"I0330 07:24:27.287660       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv6\n","stream":"stderr","time":"2022-03-30T07:24:27.289624658Z"}
+{"log":"I0330 07:24:37.290161       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"43.15498ms\"\n","stream":"stderr","time":"2022-03-30T07:24:37.290309179Z"}
+{"log":"I0330 07:24:27.171078       1 flags.go:59] FLAG: --config=\"/var/lib/kube-proxy-config/config\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180904101Z"}
+{"log":"I0330 07:24:27.287579       1 proxier.go:340] \"iptables supports --random-fully\" ipFamily=IPv4\n","stream":"stderr","time":"2022-03-30T07:24:27.28960569Z"}
+{"log":"I0330 07:24:27.171153       1 flags.go:59] FLAG: --conntrack-tcp-timeout-close-wait=\"1h0m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18091796Z"}
+{"log":"I0330 07:24:27.171763       1 flags.go:59] FLAG: --metrics-bind-address=\"127.0.0.1:10249\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181047862Z"}
+{"log":"I0330 07:24:27.287363       1 server_others.go:219] creating dualStackProxier for iptables.\n","stream":"stderr","time":"2022-03-30T07:24:27.289582217Z"}
+{"log":"I0330 07:24:27.309320       1 service.go:306] Service kube-system/kube-dns updated: 2 ports\n","stream":"stderr","time":"2022-03-30T07:24:27.309377556Z"}
+{"log":"I0330 07:24:27.400910       1 shared_informer.go:247] Caches are synced for service config \n","stream":"stderr","time":"2022-03-30T07:24:27.401444921Z"}
+{"log":"I0330 07:24:27.171229       1 flags.go:59] FLAG: --healthz-bind-address=\"0.0.0.0:10256\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180931356Z"}
+{"log":"I0330 07:24:27.309139       1 service.go:306] Service default/kubernetes updated: 1 ports\n","stream":"stderr","time":"2022-03-30T07:24:27.309242719Z"}
+{"log":"I0330 07:24:27.171888       1 flags.go:59] FLAG: --show-hidden-metrics-for-version=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181074656Z"}
+{"log":"I0330 07:24:27.268114       1 node.go:172] Successfully retrieved node IP: 10.10.121.205\n","stream":"stderr","time":"2022-03-30T07:24:27.26833001Z"}
+{"log":"I0330 07:24:27.300299       1 config.go:224] Starting endpoint slice config controller\n","stream":"stderr","time":"2022-03-30T07:24:27.300362518Z"}
+{"log":"I0330 07:24:27.170993       1 flags.go:59] FLAG: --bind-address-hard-fail=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180891607Z"}
+{"log":"I0330 07:24:27.171112       1 flags.go:59] FLAG: --conntrack-max-per-core=\"32768\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180911139Z"}
+{"log":"I0330 07:24:27.171316       1 flags.go:59] FLAG: --iptables-min-sync-period=\"1s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180948332Z"}
+{"log":"I0330 07:24:27.268146       1 server_others.go:140] Detected node IP 10.10.121.205\n","stream":"stderr","time":"2022-03-30T07:24:27.268365184Z"}
+{"log":"I0330 07:24:27.268250       1 server_others.go:177] DetectLocalMode: 'ClusterCIDR'\n","stream":"stderr","time":"2022-03-30T07:24:27.268370279Z"}
+{"log":"I0330 07:24:27.171300       1 flags.go:59] FLAG: --iptables-masquerade-bit=\"14\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180944766Z"}
+{"log":"I0330 07:24:27.288849       1 conntrack.go:52] Setting nf_conntrack_max to 131072\n","stream":"stderr","time":"2022-03-30T07:24:27.289634214Z"}
+{"log":"I0330 07:24:27.289187       1 conntrack.go:83] Setting conntrack hashsize to 32768\n","stream":"stderr","time":"2022-03-30T07:24:27.28964694Z"}
+{"log":"I0330 07:24:27.171094       1 flags.go:59] FLAG: --config-sync-period=\"15m0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180907584Z"}
+{"log":"I0330 07:24:27.171333       1 flags.go:59] FLAG: --iptables-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180951481Z"}
+{"log":"I0330 07:24:27.173502       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:27.181106354Z"}
+{"log":"I0330 07:24:27.173586       1 feature_gate.go:243] feature gates: \u0026{map[]}\n","stream":"stderr","time":"2022-03-30T07:24:27.181110018Z"}
+{"log":"I0330 07:24:27.287819       1 server.go:643] Version: v1.21.2-13+1163bd3b67234e\n","stream":"stderr","time":"2022-03-30T07:24:27.289627926Z"}
+{"log":"I0330 07:24:27.171369       1 flags.go:59] FLAG: --ipvs-min-sync-period=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180957912Z"}
+{"log":"I0330 07:24:27.300151       1 config.go:315] Starting service config controller\n","stream":"stderr","time":"2022-03-30T07:24:27.30032106Z"}
+{"log":"I0330 07:24:27.171454       1 flags.go:59] FLAG: --ipvs-tcpfin-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180999749Z"}
+{"log":"I0330 07:24:27.171659       1 flags.go:59] FLAG: --log-file-max-size=\"1800\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181027032Z"}
+{"log":"I0330 07:24:27.171676       1 flags.go:59] FLAG: --log-flush-frequency=\"5s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181030772Z"}
+{"log":"I0330 07:24:27.171895       1 flags.go:59] FLAG: --skip-log-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181081653Z"}
+{"log":"I0330 07:24:27.170930       1 flags.go:59] FLAG: --alsologtostderr=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180882318Z"}
+{"log":"I0330 07:24:27.171348       1 flags.go:59] FLAG: --ipvs-exclude-cidrs=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180954724Z"}
+{"log":"I0330 07:24:27.171407       1 flags.go:59] FLAG: --ipvs-strict-arp=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180985198Z"}
+{"log":"I0330 07:24:27.171802       1 flags.go:59] FLAG: --nodeport-addresses=\"[]\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181054737Z"}
+{"log":"I0330 07:24:27.288939       1 mount_linux.go:192] Detected OS without systemd\n","stream":"stderr","time":"2022-03-30T07:24:27.28963745Z"}
+{"log":"I0330 07:24:27.170638       1 flags.go:59] FLAG: --add-dir-header=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180837474Z"}
+{"log":"I0330 07:24:27.171137       1 flags.go:59] FLAG: --conntrack-min=\"131072\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180914556Z"}
+{"log":"I0330 07:24:27.171423       1 flags.go:59] FLAG: --ipvs-sync-period=\"30s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180989582Z"}
+{"log":"I0330 07:24:27.171733       1 flags.go:59] FLAG: --masquerade-all=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181040763Z"}
+{"log":"I0330 07:24:27.287348       1 server_others.go:212] Using iptables Proxier.\n","stream":"stderr","time":"2022-03-30T07:24:27.289578402Z"}
+{"log":"I0330 07:24:27.170967       1 flags.go:59] FLAG: --bind-address=\"0.0.0.0\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18088829Z"}
+{"log":"I0330 07:24:27.171438       1 flags.go:59] FLAG: --ipvs-tcp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180992637Z"}
+{"log":"I0330 07:24:27.171486       1 flags.go:59] FLAG: --ipvs-udp-timeout=\"0s\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181002781Z"}
+{"log":"I0330 07:24:27.171247       1 flags.go:59] FLAG: --healthz-port=\"10256\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180934596Z"}
+{"log":"I0330 07:24:27.171277       1 flags.go:59] FLAG: --hostname-override=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180941487Z"}
+{"log":"I0330 07:24:27.171572       1 flags.go:59] FLAG: --log-backtrace-at=\":0\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18101791Z"}
+{"log":"I0330 07:24:27.171780       1 flags.go:59] FLAG: --metrics-port=\"10249\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181051298Z"}
+{"log":"I0330 07:24:27.171837       1 flags.go:59] FLAG: --oom-score-adj=\"-999\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181061921Z"}
+{"log":"I0330 07:24:27.171891       1 flags.go:59] FLAG: --skip-headers=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181077861Z"}
+{"log":"I0330 07:24:27.171186       1 flags.go:59] FLAG: --detect-local-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18092438Z"}
+{"log":"I0330 07:24:27.171506       1 flags.go:59] FLAG: --kube-api-burst=\"10\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181005869Z"}
+{"log":"I0330 07:24:27.171883       1 flags.go:59] FLAG: --proxy-port-range=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181071535Z"}
+{"log":"I0330 07:24:27.171899       1 flags.go:59] FLAG: --stderrthreshold=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181084987Z"}
+{"log":"I0330 07:24:27.171903       1 flags.go:59] FLAG: --udp-timeout=\"250ms\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181088091Z"}
+{"log":"I0330 07:24:27.401048       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:27.401559895Z"}
+{"log":"I0330 07:24:37.290261       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.290337989Z"}
+{"log":"I0330 07:24:38.320536       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:38.320923751Z"}
+{"log":"I0330 07:24:27.171692       1 flags.go:59] FLAG: --logtostderr=\"true\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181033893Z"}
+{"log":"I0330 07:24:27.171822       1 flags.go:59] FLAG: --one-output=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181058053Z"}
+{"log":"I0330 07:24:27.460478       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:27.46325622Z"}
+{"log":"I0330 07:24:37.247120       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T07:24:37.24727748Z"}
+{"log":"I0330 07:24:27.171391       1 flags.go:59] FLAG: --ipvs-scheduler=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180960973Z"}
+{"log":"I0330 07:24:27.171852       1 flags.go:59] FLAG: --profiling=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181065213Z"}
+{"log":"I0330 07:24:27.171922       1 flags.go:59] FLAG: --write-config-to=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18110338Z"}
+{"log":"I0330 07:24:27.171203       1 flags.go:59] FLAG: --feature-gates=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180927546Z"}
+{"log":"I0330 07:24:27.171037       1 flags.go:59] FLAG: --cleanup=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180898132Z"}
+{"log":"I0330 07:24:27.171061       1 flags.go:59] FLAG: --cluster-cidr=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.180901124Z"}
+{"log":"I0330 07:24:27.171537       1 flags.go:59] FLAG: --kube-api-qps=\"5\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18101196Z"}
+{"log":"I0330 07:24:27.171911       1 flags.go:59] FLAG: --version=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181097185Z"}
+{"log":"I0330 07:24:27.171556       1 flags.go:59] FLAG: --kubeconfig=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181015007Z"}
+{"log":"I0330 07:24:27.171875       1 flags.go:59] FLAG: --proxy-mode=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181068452Z"}
+{"log":"I0330 07:24:27.171262       1 flags.go:59] FLAG: --help=\"false\"\n","stream":"stderr","time":"2022-03-30T07:24:27.18093793Z"}
+{"log":"I0330 07:24:27.171608       1 flags.go:59] FLAG: --log-file=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181023736Z"}
+{"log":"I0330 07:24:27.171591       1 flags.go:59] FLAG: --log-dir=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181020641Z"}
+{"log":"I0330 07:24:27.171918       1 flags.go:59] FLAG: --vmodule=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181100233Z"}
+{"log":"I0330 07:24:27.171748       1 flags.go:59] FLAG: --master=\"\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181044571Z"}
+{"log":"I0330 07:24:27.171907       1 flags.go:59] FLAG: --v=\"2\"\n","stream":"stderr","time":"2022-03-30T07:24:27.181093957Z"}
+{"log":"I0330 08:08:14.044244       1 proxier.go:1289] \"Opened local port\" port=\"\"nodePort for default/nginx\" (:32022/tcp4)\"\n","stream":"stderr","time":"2022-03-30T08:08:14.044378956Z"}
+{"log":"I0330 08:08:14.016123       1 service.go:421] Adding new service port \"default/nginx\" at 172.20.195.20:80/TCP\n","stream":"stderr","time":"2022-03-30T08:08:14.017452218Z"}
+{"log":"I0330 08:08:14.048559       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"32.433601ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.048718829Z"}
+{"log":"I0330 08:08:14.078717       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"30.1208ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.078891167Z"}
+{"log":"I0330 08:08:14.016052       1 service.go:306] Service default/nginx updated: 1 ports\n","stream":"stderr","time":"2022-03-30T08:08:14.017151694Z"}
+{"log":"I0330 08:08:14.016163       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.017463651Z"}
+{"log":"I0330 08:08:14.048618       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.048741792Z"}
+{"log":"I0330 08:08:14.053799       1 proxier.go:1289] \"Opened local port\" port=\"\"nodePort for default/nginx\" (:32022/tcp4)\"\n","stream":"stderr","time":"2022-03-30T08:08:14.053962998Z"}
+{"log":"I0330 08:08:14.015939       1 service.go:421] Adding new service port \"default/nginx\" at 172.20.195.20:80/TCP\n","stream":"stderr","time":"2022-03-30T08:08:14.016290823Z"}
+{"log":"I0330 08:08:14.057987       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"42.042762ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.058130853Z"}
+{"log":"I0330 08:08:14.089932       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"31.904768ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.09004361Z"}
+{"log":"I0330 08:08:14.015869       1 service.go:306] Service default/nginx updated: 1 ports\n","stream":"stderr","time":"2022-03-30T08:08:14.016203141Z"}
+{"log":"I0330 08:08:14.015975       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.016315526Z"}
+{"log":"I0330 08:08:14.058068       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.058172945Z"}
+{"log":"I0330 08:08:14.111993       1 proxier.go:1289] \"Opened local port\" port=\"\"nodePort for default/nginx\" (:32022/tcp4)\"\n","stream":"stderr","time":"2022-03-30T08:08:14.112155079Z"}
+{"log":"I0330 08:08:14.026834       1 service.go:421] Adding new service port \"default/nginx\" at 172.20.195.20:80/TCP\n","stream":"stderr","time":"2022-03-30T08:08:14.027377215Z"}
+{"log":"I0330 08:08:14.129686       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"102.844028ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.129909461Z"}
+{"log":"I0330 08:08:14.174953       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"45.217492ms\"\n","stream":"stderr","time":"2022-03-30T08:08:14.175097764Z"}
+{"log":"I0330 08:08:14.026772       1 service.go:306] Service default/nginx updated: 1 ports\n","stream":"stderr","time":"2022-03-30T08:08:14.026939307Z"}
+{"log":"I0330 08:08:14.026870       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.027390405Z"}
+{"log":"I0330 08:08:14.129748       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:14.130079716Z"}
+{"log":"I0330 08:08:19.973826       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:19.975369395Z"}
+{"log":"E0330 08:08:16.409383       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:08:16.40965233Z"}
+{"log":"I0330 08:08:20.008455       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"28.938743ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.008574624Z"}
+{"log":"I0330 08:08:20.049903       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"40.945318ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.050045225Z"}
+{"log":"I0330 08:08:19.979539       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:19.979773194Z"}
+{"log":"I0330 08:08:20.009003       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:20.00909357Z"}
+{"log":"E0330 08:08:16.406586       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:08:16.406773589Z"}
+{"log":"I0330 08:08:20.012909       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"39.227768ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.014146444Z"}
+{"log":"I0330 08:08:20.051021       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"38.076926ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.051127926Z"}
+{"log":"I0330 08:08:19.973720       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:19.975216202Z"}
+{"log":"I0330 08:08:20.012967       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:20.01419554Z"}
+{"log":"E0330 08:08:16.406156       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:08:16.406292799Z"}
+{"log":"I0330 08:08:20.033834       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"28.622195ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.033947874Z"}
+{"log":"I0330 08:08:20.004992       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"31.21948ms\"\n","stream":"stderr","time":"2022-03-30T08:08:20.005100999Z"}
+{"log":"I0330 08:08:22.454582       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"30.515349ms\"\n","stream":"stderr","time":"2022-03-30T08:08:22.45468739Z"}
+{"log":"I0330 08:08:21.423761       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"37.4232ms\"\n","stream":"stderr","time":"2022-03-30T08:08:21.423899844Z"}
+{"log":"I0330 08:08:20.005251       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:20.005303007Z"}
+{"log":"I0330 08:08:21.386366       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:21.387543748Z"}
+{"log":"I0330 08:08:22.424146       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:22.425850728Z"}
+{"log":"I0330 08:08:22.472293       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"57.242994ms\"\n","stream":"stderr","time":"2022-03-30T08:08:22.472423096Z"}
+{"log":"I0330 08:08:21.413720       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"28.490073ms\"\n","stream":"stderr","time":"2022-03-30T08:08:21.41383315Z"}
+{"log":"I0330 08:08:21.385274       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:21.385575978Z"}
+{"log":"I0330 08:08:22.415135       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:22.415468473Z"}
+{"log":"I0330 08:08:22.460004       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"37.210019ms\"\n","stream":"stderr","time":"2022-03-30T08:08:22.460116327Z"}
+{"log":"I0330 08:08:21.421544       1 proxier.go:824] \"syncProxyRules complete\" elapsed=\"35.929621ms\"\n","stream":"stderr","time":"2022-03-30T08:08:21.42165409Z"}
+{"log":"I0330 08:08:21.385806       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:21.387609926Z"}
+{"log":"I0330 08:08:22.422868       1 proxier.go:854] \"Syncing iptables rules\"\n","stream":"stderr","time":"2022-03-30T08:08:22.425099195Z"}
+{"log":"E0330 08:09:14.232527       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:14.232663742Z"}
+{"log":"E0330 08:09:14.232547       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:14.232710015Z"}
+{"log":"E0330 08:09:27.317352       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:27.317513989Z"}
+{"log":"E0330 08:09:27.317380       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:27.31755973Z"}
+{"log":"E0330 08:09:32.102399       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:32.102696258Z"}
+{"log":"E0330 08:09:32.102424       1 utils.go:282] Skipping invalid IP: \n","stream":"stderr","time":"2022-03-30T08:09:32.102979148Z"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"log":"W0330 08:11:35.248407       1 warnings.go:70] discovery.k8s.io/v1beta1 EndpointSlice is deprecated in v1.21+, unavailable in v1.25+; use discovery.k8s.io/v1 EndpointSlice\n","stream":"stderr","time":"2022-03-30T08:11:35.248551014Z"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.65.226","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.150.101","size":"612","user":"-"}
+{"agent":"curl/7.79.1","code":"200","host":"-","method":"GET","path":"/","referer":"-","remote":"10.10.121.205","size":"612","user":"-"}
